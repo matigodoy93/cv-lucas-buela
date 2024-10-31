@@ -5,7 +5,7 @@ export const Education = () => {
 
       <div className="md:flex md:justify-around md:items-center">
         {/* Texto */}
-        <div className="flex flex-col mb-6">
+        <div className="flex flex-col mb-6 w-full md:w-2/4">
           <h2 className="text-center text-6xl mb-8 uppercase">Educación</h2>
 
           <div className="mb-8">
@@ -26,7 +26,7 @@ export const Education = () => {
             <div className="bg-red-500 w-full md:w-3/4 h-full rounded-xl mb-10 md:mb-0 md:relative">
               <img className="w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
             </div>
-            <div className="bg-red-800 w-full md:w-3/4 h-full rounded-xl md:absolute md:-top-1/2 md:right-48 md:transform">
+            <div className="bg-red-800 w-full md:w-3/4 h-full rounded-xl md:absolute md:-top-1/2 md:right-20 md:transform">
               <img className="w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de asistencia en Educación IT" />
             </div>
           </div>

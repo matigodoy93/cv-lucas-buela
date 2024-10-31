@@ -18,7 +18,7 @@ export function Navbar() {
     <>
       {/* DESKTOP */}
       <div className={`${isMobile && 'hidden'}`}>
-      <nav className="bg-black md:bg-transparent w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
+      <nav className="bg-black w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
 
           <hr className="w-1/3 hidden md:block" />
 
