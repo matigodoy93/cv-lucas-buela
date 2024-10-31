@@ -4,7 +4,7 @@ import { Projects } from '../components/Projects/Projects'
 
 export const Home = () => {
   return (
-    <>
+    <div>
         {/* Sobre mí */}
         <AboutMe />
 
@@ -13,6 +13,6 @@ export const Home = () => {
 
         {/* Mis Trabajos */}
         <Projects />
-    </>
+    </div>
   )
 }
