@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,24 +25,39 @@ export function Navbar() {
             className={` w-2/5 lg:w-1/3 text-base flex-row justify-around py-0 opacity-100 translate-y-0 flex `} 
           >
             <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <Link className="whitespace-nowrap" to="about">
+              <button className="whitespace-nowrap underline-offset-8 hover:underline" onClick={() => {
+                const element = document.getElementById('about')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}>
                 Sobre Mí
-              </Link>
+              </button>
             </li>
             <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <Link to="education">
+              <button className='underline-offset-8 hover:underline' onClick={() => {
+                const element = document.getElementById('education')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}>
                 Educación
-              </Link>
+              </button>
+            </li>
+            <li className="w-full text-center py-2 md:px-2">
+              <button className='underline-offset-8 hover:underline' onClick={() => {
+                const element = document.getElementById('home-projects')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}>
+                Proyectos
+              </button>
             </li>
             <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <Link to="home-projects">
-                Proyectos
-              </Link>
-            </li>
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:ps-2">
-              <Link to="contact">
-                Contacto
-              </Link>
+              <a className='underline-offset-8 hover:underline' href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
+                Currículum
+              </a>
             </li>
           </ul>
         </nav>
@@ -81,25 +95,43 @@ export function Navbar() {
             style={{ position: isMenuOpen ? 'relative' : 'absolute', top: isMenuOpen ? '0' : '-100%' }}
             id="navbarLinks"
           >
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <Link className="whitespace-nowrap" to="about">
+            <li className="w-full text-center py-10 md:px-2">
+              <button className="whitespace-nowrap" onClick={() => {
+                const element = document.getElementById('about')
+                setIsMenuOpen(false);
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}>
                 Sobre Mí
-              </Link>
+              </button>
             </li>
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <Link to="education">
+            <li className="w-full text-center py-10 md:px-2">
+              <button onClick={() => {
+                const element = document.getElementById('education')
+                setIsMenuOpen(false);
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}>
                 Educación
-              </Link>
+              </button>
             </li>
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <Link to="home-projects">
+            <li className="w-full text-center py-10 md:px-2">
+              <button onClick={() => {
+                const element = document.getElementById('home-projects')
+                setIsMenuOpen(false);
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}>
                 Proyectos
-              </Link>
+              </button>
             </li>
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:ps-2">
-              <Link to="contact">
-                Contacto
-              </Link>
+            <li className="w-full text-center py-10 md:px-2">
+              <a  href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
+                Currículum
+              </a>
             </li>
           </ul>
         </nav>
