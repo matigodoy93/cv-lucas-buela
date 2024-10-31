@@ -11,7 +11,7 @@ export const Education = () => {
       <div className="md:flex md:justify-around md:items-center">
         {/* Texto */}
         <div className="flex flex-col mb-6 w-full md:w-2/4">
-          <h2 className="text-center text-6xl mb-8 uppercase">Educación</h2>
+          <h2 className="text-center text-5xl mb-8 uppercase">Educación</h2>
 
           <div className="mb-8">
             <h4 className="text-2xl text-center md:text-start mb-4 leading-6"><b>Escuela de Arte Multimedial "Da Vinci"</b></h4>

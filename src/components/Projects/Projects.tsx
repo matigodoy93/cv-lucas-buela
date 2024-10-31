@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <section id="home-projects" ref={projectsHomeRef} className="h-full px-8 py-10">
 
-    <h2 className="text-center text-6xl mb-8 uppercase">Proyectos</h2>
+    <h2 className="text-center text-5xl mb-8 uppercase">Proyectos</h2>
 
     {/* Proyectos */}
     <div className="md:flex md:flex-wrap md:justify-center">
