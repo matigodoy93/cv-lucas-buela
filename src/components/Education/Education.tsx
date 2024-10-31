@@ -1,7 +1,12 @@
+import { useRef } from 'react';
+import './Education.css';
 
 export const Education = () => {
+  
+  const educationRef = useRef<HTMLDivElement | null>(null);
+
   return (
-    <section id="education" className="h-full px-8 mb-10">
+    <section id="education" ref={educationRef} className="h-full md:flex px-8 py-10 md:h-screen md:items-center">
 
       <div className="md:flex md:justify-around md:items-center">
         {/* Texto */}
@@ -23,10 +28,10 @@ export const Education = () => {
         {/* Certificados */}
         <div className="w-full md:w-2/4 mb-6 md:mt-40">
           <div className="w-full flex flex-col items-end md:relative">
-            <div className="bg-red-500 w-full md:w-3/4 h-full rounded-xl mb-10 md:mb-0 md:relative">
+            <div className="certified bg-red-500 w-full md:w-3/4 h-full rounded-xl mb-10 md:mb-0 md:relative">
               <img className="w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
             </div>
-            <div className="bg-red-800 w-full md:w-3/4 h-full rounded-xl md:absolute md:-top-1/2 md:right-20 md:transform">
+            <div className="certified bg-red-800 w-full md:w-3/4 h-full rounded-xl md:absolute md:-top-1/2 md:right-20 md:transform">
               <img className="w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de asistencia en Educación IT" />
             </div>
           </div>
