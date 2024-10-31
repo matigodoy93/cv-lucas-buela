@@ -1,26 +1,22 @@
-import { AboutMe } from "./components/AboutMe/AboutMe"
-import { Education } from "./components/Education/Education"
-import { Navbar } from "./components/Navbar/Navbar"
-import { Projects } from "./components/Projects/Projects"
+import {
+  Route,
+  Routes
+} from "react-router-dom";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Projects } from "./components/Projects/Projects";
+import { Home } from "./pages/Home";
 
 function App() {
 
   return (
     <>
-      <div className="app-main-container">
-        {/* Navbar */}
-        <Navbar />
+      <Navbar />
 
-        {/* Sobre mí */}
-        <AboutMe />
-
-        {/* Educación */}
-        <Education />
-
-        {/* Mis Trabajos */}
-        <Projects />
-
-      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/project/:id' element={<Home />} />
+      </Routes>
     </>
   )
 }
