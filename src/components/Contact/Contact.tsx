@@ -1,7 +1,7 @@
 
 export const Contact = () => {
   return (
-    <section id="contact" className='h-screen px-6 bg-green-600'>
+    <section id="contact" className='h-screen px-6 mb-10'>
       
       <div className="flex flex-col">
 

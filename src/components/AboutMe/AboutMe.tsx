@@ -1,7 +1,7 @@
 
 export const AboutMe = () => {
   return (
-    <section id="about" className='h-screen px-6 bg-green-600'>
+    <section id="about" className='h-screen px-6  mb-10 mt-10 md:mt-24'>
       
       {/* Foto */}
       <div className="w-80 h-80 mx-auto bg-slate-700 rounded-full mb-6">
