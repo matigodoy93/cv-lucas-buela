@@ -1,9 +1,11 @@
 import { useRef } from 'react';
 import './Education.css';
+import { useTranslation } from 'react-i18next';
 
 export const Education = () => {
   
   const educationRef = useRef<HTMLDivElement | null>(null);
+  const { t } = useTranslation();
 
   return (
     <section id="education" ref={educationRef} className="h-full md:flex px-8 py-10 md:h-screen md:items-center">
@@ -11,16 +13,16 @@ export const Education = () => {
       <div className="md:flex md:justify-around md:items-center">
         {/* Texto */}
         <div className="flex flex-col mb-6 w-full md:w-2/4">
-          <h2 className="text-center text-5xl mb-8 uppercase">Educación</h2>
+          <h2 className="text-center text-5xl mb-8 uppercase">{ t('education') }</h2>
 
           <div className="mb-8">
-            <h4 className="text-2xl text-center md:text-start mb-4 leading-6"><b>Escuela de Arte Multimedial "Da Vinci"</b></h4>
-            <p className="text-xl text-center md:text-start leading-6">Analista de sistemas/Diseñador UX/UI | 2021-En curso</p>
+            <h4 className="text-2xl text-center md:text-start mb-4 leading-6"><b>{ t('educationDavinciTitle') }</b></h4>
+            <p className="text-xl text-center md:text-start leading-6">{ t('educationDavinciDescription') }</p>
           </div>
 
           <div className="">
             <h4 className="text-2xl text-center md:text-start mb-4 leading-6"><b>Educacion IT</b></h4>
-            <p className="text-xl text-center md:text-start leading-6">Tester QA Manual/Automation Selenium | 2023 (Finalizado)</p>
+            <p className="text-xl text-center md:text-start leading-6">{ t('educacionItDescription') }</p>
           </div>
 
         </div>

@@ -1,20 +1,22 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom'
 import './Projects.css'
+import { useTranslation } from 'react-i18next';
 
 export const Projects = () => {
   const projectsHomeRef = useRef<HTMLDivElement | null>(null);
+  const { t } = useTranslation();
 
   return (
     <section id="home-projects" ref={projectsHomeRef} className="h-full px-8 py-10">
 
-    <h2 className="text-center text-5xl mb-8 uppercase">Proyectos</h2>
+    <h2 className="text-center text-5xl mb-8 uppercase">{ t('projects') }</h2>
 
     {/* Proyectos */}
     <div className="md:flex md:flex-wrap md:justify-center">
       
       <div className="mb-4 md:w-2/4">
-        <h4 className="text-2xl text-center leading-6 mb-6">Cine Online</h4>
+        <h4 className="text-2xl text-center leading-6 mb-6">{ t('cinemaOnline') }</h4>
           {/* Títulos */}
           <Link to="/proyect/1">
             <div className="w-full flex flex-col items-center">

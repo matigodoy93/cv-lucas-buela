@@ -1,18 +1,20 @@
 import { useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBehance, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from "react-i18next";
 
 
 export const Contact = () => {
   const contactRef = useRef<HTMLDivElement | null>(null);
+  const { t } = useTranslation();
   
   return (
     <section id="contact" ref={contactRef} className='bg-blue-900 p-4'>
       
       
-        <p className="text-center text-xl mb-2">👋 ¡Gracias por pasar por aquí! Aquí hay más de mí si estás interesado</p>
+        <p className="text-center text-xl mb-2">👋 { t('thanks') }</p>
         
-        <div className="w-1/4 mx-auto">
+        <div className="w-3/4 md:w-2/4 mx-auto">
           <div className="flex justify-center items-center">
 
             <a href="https://www.linkedin.com/in/lucas-buela-/" target="_blank" className="flex justify-center items-center w-10 h-10 overflow-hidden mx-auto rounded-full">

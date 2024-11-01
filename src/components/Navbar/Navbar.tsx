@@ -1,8 +1,22 @@
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css'
+import { useTranslation } from 'react-i18next';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
+  useEffect(() => {
+    i18n.changeLanguage(navigator.language);
+  }, [])
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,7 +45,7 @@ export function Navbar() {
                   behavior: 'smooth'
                 })
               }}>
-                Sobre Mí
+                {t('aboutMe')}
               </button>
             </li>
             <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
@@ -41,7 +55,7 @@ export function Navbar() {
                   behavior: 'smooth'
                 })
               }}>
-                Educación
+                {t('education')}
               </button>
             </li>
             <li className="w-full text-center py-2 md:px-2">
@@ -51,13 +65,31 @@ export function Navbar() {
                   behavior: 'smooth'
                 })
               }}>
-                Proyectos
+                {t('projects')}
               </button>
             </li>
             <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
               <a className='underline-offset-8 hover:underline' href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
-                Currículum
+                {t('curriculum')}
               </a>
+            </li>
+
+            {/* SWITCH DE IDIOMA */}
+            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
+              <label className="switch">
+                <input 
+                  type="checkbox" 
+                  onChange={() => i18n.language === 'es' ? changeLanguage('en') : changeLanguage('es')}
+                />
+                <span className="slider">
+                  <span className="flag es">
+                    <img src="https://flagcdn.com/w20/ar.png" alt="Argentina" />
+                  </span>
+                  <span className="flag en">
+                    <img src="https://flagcdn.com/w20/us.png" alt="Estados Unidos" />
+                  </span>
+                </span>
+              </label>
             </li>
           </ul>
         </nav>
@@ -65,7 +97,7 @@ export function Navbar() {
 
       {/* MOBILE */}
       <div className={`${!isMobile && 'hidden'}`}>
-        <nav className="bg-black md:bg-transparent w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
+        <nav className="menu md:bg-transparent w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
           {/* Botón de hamburguesa visible solo en pantallas pequeñas */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)} 
@@ -78,7 +110,7 @@ export function Navbar() {
               viewBox="0 0 24 24" 
               strokeWidth="2" 
               stroke="currentColor" 
-              className="w-8 h-8"
+              className="w-14 h-14"
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
@@ -103,7 +135,7 @@ export function Navbar() {
                   behavior: 'smooth'
                 })
               }}>
-                Sobre Mí
+                {t('aboutMe')}
               </button>
             </li>
             <li className="w-full text-center py-10 md:px-2">
@@ -114,7 +146,7 @@ export function Navbar() {
                   behavior: 'smooth'
                 })
               }}>
-                Educación
+                {t('education')}
               </button>
             </li>
             <li className="w-full text-center py-10 md:px-2">
@@ -125,13 +157,31 @@ export function Navbar() {
                   behavior: 'smooth'
                 })
               }}>
-                Proyectos
+                {t('projects')}
               </button>
             </li>
             <li className="w-full text-center py-10 md:px-2">
               <a  href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
-                Currículum
+                {t('curriculum')} <FontAwesomeIcon icon={faLink} />
               </a>
+            </li>
+            
+            {/* SWITCH DE IDIOMA */}
+            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
+              <label className="switch">
+                <input 
+                  type="checkbox" 
+                  onChange={() => i18n.language === 'es' ? changeLanguage('en') : changeLanguage('es')}
+                />
+                <span className="slider">
+                  <span className="flag es">
+                    <img src="https://flagcdn.com/w20/ar.png" alt="Argentina" />
+                  </span>
+                  <span className="flag en">
+                    <img src="https://flagcdn.com/w20/us.png" alt="Estados Unidos" />
+                  </span>
+                </span>
+              </label>
             </li>
           </ul>
         </nav>
