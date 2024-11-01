@@ -10,32 +10,32 @@ export const Education = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="education" ref={educationRef} className="h-full md:flex px-8 py-10 md:h-screen md:items-center">
+    <section id="education" ref={educationRef} className="h-full md:pt-20 lg:pt-0 lg:flex px-8 py-10 lg:h-screen lg:items-center">
 
-      <div className="md:flex md:justify-evenly md:items-center md:px-20">
+      <div className="lg:flex lg:justify-evenly lg:items-center lg:px-4">
         {/* Texto */}
-        <div className="flex flex-col mb-6 w-full md:w-2/4 2xl:ps-20">
-          <h2 className="font-bold text-center md:text-start text-6xl md:text-7xl mb-8 uppercase">{ t('education') }</h2>
+        <div className="flex flex-col mb-6 w-full lg:w-2/4 2xl:ps-20">
+          <h2 className="font-bold text-center  mb-8 uppercase md:text-7xl lg:text-start text-6xl lg:text-7xl">{ t('education') }</h2>
 
           <div className="mb-8">
-            <h4 className="text-2xl text-center md:text-start mb-4 leading-6"><b>{ t('educationDavinciTitle') }</b></h4>
-            <p className="text-xl text-center md:text-start leading-6">{ t('educationDavinciDescription') }</p>
+            <h4 className="text-2xl text-center md:text-4xl lg:text-start mb-4 leading-6"><b>{ t('educationDavinciTitle') }</b></h4>
+            <p className="text-xl text-center md:text-2xl lg:text-start leading-6">{ t('educationDavinciDescription') }</p>
           </div>
 
           <div className="">
-            <h4 className="text-2xl text-center md:text-start mb-4 leading-6"><b>Educacion IT</b></h4>
-            <p className="text-xl text-center md:text-start leading-6">{ t('educacionItDescription') }</p>
+            <h4 className="text-2xl text-center md:text-4xl lg:text-start mb-4 leading-6"><b>Educacion IT</b></h4>
+            <p className="text-xl text-center md:text-2xl lg:text-start leading-6">{ t('educacionItDescription') }</p>
           </div>
 
         </div>
 
         {/* Certificados */}
-        <div className="w-full md:w-2/4 md:flex ">
-          <div className="w-full flex flex-col items-end md:relative lg:top-24">
-            <div className="certified-glow  certified-animation bg-blue-500 w-full md:w-3/4 h-full rounded-xl mb-10 md:mb-0 md:relative">
+        <div className="w-full lg:w-2/4 lg:flex">
+          <div className="w-full flex flex-col items-end lg:relative lg:top-24">
+            <div className="certified-glow  certified-animation bg-blue-500 w-full md:w-3/4 md:mx-auto lg:w-3/4 h-full rounded-xl mb-10 lg:mb-0 lg:relative">
               <img className="w-full" src={ certified1 } alt="Certificado de aprobación en Educación IT" />
             </div>
-            <div className="certified-glow  certified-animation bg-blue-800 w-full md:w-3/4 h-full rounded-xl md:absolute md:-top-1/2 lg:-top-1/3 md:right-44 2xl:right-80 md:transform">
+            <div className="certified-glow  certified-animation bg-blue-800 w-full md:w-3/4 md:mx-auto lg:w-3/4 h-full rounded-xl lg:absolute lg:-top-1/3 lg:right-44 2xl:right-80 lg:transform">
               <img className="w-full" src={ certified2 } alt="Certificado de asistencia en Educación IT" />
             </div>
           </div>

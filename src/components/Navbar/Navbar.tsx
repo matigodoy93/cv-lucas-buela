@@ -17,7 +17,6 @@ export function Navbar() {
     i18n.changeLanguage(navigator.language);
   }, [])
   
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768); // Cambia 768 por tu punto de corte
@@ -33,12 +32,12 @@ export function Navbar() {
       <div className={`${isMobile && 'hidden'}`}>
       <nav className="bg-black md:bg-transparent w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
 
-          <hr className="w-1/3 hidden md:block" />
+          <hr className="w-1/2 scroll-watcher hidden md:inline-block md:1/4 md:w-1/5 " />
 
-          <ul 
-            className={` w-2/5 md:w-1/3 lg:w-2/4 text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex `} 
+          <ul
+            className={` w-2/5 md:w-3/4 text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex `} 
           >
-            <li className="w-full lg:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
+            <li className="w-full md:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
               <button className="whitespace-nowrap underline-offset-8 hover:underline" onClick={() => {
                 const element = document.getElementById('about')
                 element?.scrollIntoView({
@@ -48,7 +47,7 @@ export function Navbar() {
                 {t('aboutMe')}
               </button>
             </li>
-            <li className="w-full lg:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
+            <li className="w-full md:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
               <button className='underline-offset-8 hover:underline' onClick={() => {
                 const element = document.getElementById('education')
                 element?.scrollIntoView({
@@ -58,7 +57,7 @@ export function Navbar() {
                 {t('education')}
               </button>
             </li>
-            <li className="w-full lg:text-2xl text-center py-2 md:px-2">
+            <li className="w-full md:text-2xl text-center py-2 md:px-2">
               <button className='underline-offset-8 hover:underline' onClick={() => {
                 const element = document.getElementById('home-projects')
                 element?.scrollIntoView({
@@ -68,7 +67,7 @@ export function Navbar() {
                 {t('projects')}
               </button>
             </li>
-            <li className="w-full lg:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
+            <li className="w-full md:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
               <a className='underline-offset-8 hover:underline flex items-center' href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
                 {t('curriculum')} <FontAwesomeIcon className='ms-1' icon={faLink} />
               </a>
@@ -97,7 +96,7 @@ export function Navbar() {
 
       {/* MOBILE */}
       <div className={`${!isMobile && 'hidden'}`}>
-        <nav className="menu md:bg-transparent w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
+        <nav className="menu flex items-center justify-between fixed top-0 z-50 w-full md:bg-transparent md:pe-6 md:py-4">
           {/* Botón de hamburguesa visible solo en pantallas pequeñas */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)} 
@@ -127,7 +126,7 @@ export function Navbar() {
             style={{ position: isMenuOpen ? 'relative' : 'absolute', top: isMenuOpen ? '0' : '-100%' }}
             id="navbarLinks"
           >
-            <li className="w-full text-center py-10 md:px-2">
+            <li className="w-full text-center py-12 md:px-2">
               <button className="whitespace-nowrap" onClick={() => {
                 const element = document.getElementById('about')
                 setIsMenuOpen(false);
@@ -138,7 +137,7 @@ export function Navbar() {
                 {t('aboutMe')}
               </button>
             </li>
-            <li className="w-full text-center py-10 md:px-2">
+            <li className="w-full text-center py-12 md:px-2">
               <button onClick={() => {
                 const element = document.getElementById('education')
                 setIsMenuOpen(false);
@@ -149,7 +148,7 @@ export function Navbar() {
                 {t('education')}
               </button>
             </li>
-            <li className="w-full text-center py-10 md:px-2">
+            <li className="w-full text-center py-12 md:px-2">
               <button onClick={() => {
                 const element = document.getElementById('home-projects')
                 setIsMenuOpen(false);
@@ -160,7 +159,7 @@ export function Navbar() {
                 {t('projects')}
               </button>
             </li>
-            <li className="w-full text-center py-10 md:px-2">
+            <li className="w-full text-center py-12 md:px-2">
               <a  href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
                 {t('curriculum')} <FontAwesomeIcon icon={faLink} />
               </a>

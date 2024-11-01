@@ -2,6 +2,25 @@
     background: rgba(0,0,0,.8);
 }
 
+/* ----------------------- LINEA ----------------------- */
+
+.scroll-watcher {
+  z-index: 1000;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+  transform-origin: left;
+  border: 1px solid #fff;
+}
+
+@keyframes scroll-watcher {
+  from { scale: 1 1;  }
+  to { scale: 0 1; }
+}
+
+/* ----------------------- LINEA ----------------------- */
+
+
+/* ----------------------- SWITCH ----------------------- */
 .switch {
     position: relative;
     display: inline-block;
@@ -22,7 +41,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #517fff;
     transition: background-color 0.4s;
     border-radius: 30px;
   }
@@ -40,7 +59,7 @@
   }
   
   input:checked + .slider {
-    background-color: #4CAF50;
+    background-color: #ff5168;
   }
   
   input:checked + .slider:before {
@@ -79,4 +98,5 @@
   input:checked + .slider .es {
     opacity: 0; /* Hide the Argentina flag when checked */
   }
+/* ----------------------- SWITCH ----------------------- */
   

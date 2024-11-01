@@ -9,19 +9,18 @@ export const AboutMe = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" ref={aboutRef} className='h-full md:h-screen px-4 md:px-8 md:flex md:items-center'>
+    <section id="about" ref={aboutRef} className='h-full md:h-screen md:pt-20 lg:pt-0 lg:h-screen px-4 lg:px-8 lg:flex lg:items-center'>
       
-      <div className="ms-0 md:ms-32 md:flex md:flex-row md:justify-evenly">
+      <div className="ms-0 lg:ms-32 pt-20 lg:pt-0 lg:flex lg:flex-row lg:justify-evenly lg:items-center">
         {/* Foto */}
-        <div className="photo-face mx-auto md:mx-0 w-80 h-80 md:w-96 md:h-96 overflow-hidden bg-red-700 rounded-full my-6">
-          <img className="w-full transform -translate-y-44" src={profile} alt="Lucas Gustavo Buela" />
+        <div className="photo-face lg:mt-0 mx-auto lg:mx-0 w-80 h-80 lg:w-96 lg:h-96 overflow-hidden bg-red-700 rounded-full">
+          <img className=" w-full transform -translate-y-44" src={profile} alt="Lucas Gustavo Buela" />
         </div>
 
-
         {/* Texto */}
-        <div className="background-about-description rounded-2xl w-full flex flex-col p-8 md:w-2/4  md:justify-center">
-          <h2 className="font-bold text-center md:text-start text-6xl md:text-7xl mb-8 uppercase">{ t('aboutMe') }</h2>
-          <p className="text-xl text-center md:text-start leading-7">{t('aboutMeDescrition')}</p>
+        <div className="background-about-description rounded-2xl w-full flex flex-col p-8 lg:w-2/4 lg:justify-center">
+          <h2 className="font-bold text-center text-6xl mb-8 uppercase md:text-7xl lg:text-start lg:text-7xl">{ t('aboutMe') }</h2>
+          <p className="text-xl md:text-5xl md:text-justify text-center lg:text-start lg:text-2xl leading-7">{t('aboutMeDescrition')}</p>
         </div>
 
         <div className="redes">
