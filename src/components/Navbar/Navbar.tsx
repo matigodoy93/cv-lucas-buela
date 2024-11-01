@@ -36,9 +36,9 @@ export function Navbar() {
           <hr className="w-1/3 hidden md:block" />
 
           <ul 
-            className={` w-2/5 lg:w-1/3 text-base flex-row justify-around py-0 opacity-100 translate-y-0 flex `} 
+            className={` w-2/5 md:w-1/3 lg:w-2/4 text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex `} 
           >
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
+            <li className="w-full lg:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
               <button className="whitespace-nowrap underline-offset-8 hover:underline" onClick={() => {
                 const element = document.getElementById('about')
                 element?.scrollIntoView({
@@ -48,7 +48,7 @@ export function Navbar() {
                 {t('aboutMe')}
               </button>
             </li>
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
+            <li className="w-full lg:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
               <button className='underline-offset-8 hover:underline' onClick={() => {
                 const element = document.getElementById('education')
                 element?.scrollIntoView({
@@ -58,7 +58,7 @@ export function Navbar() {
                 {t('education')}
               </button>
             </li>
-            <li className="w-full text-center py-2 md:px-2">
+            <li className="w-full lg:text-2xl text-center py-2 md:px-2">
               <button className='underline-offset-8 hover:underline' onClick={() => {
                 const element = document.getElementById('home-projects')
                 element?.scrollIntoView({
@@ -68,9 +68,9 @@ export function Navbar() {
                 {t('projects')}
               </button>
             </li>
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <a className='underline-offset-8 hover:underline' href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
-                {t('curriculum')}
+            <li className="w-full lg:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
+              <a className='underline-offset-8 hover:underline flex items-center' href='https://drive.google.com/file/d/1eiSLpaJ6cTe6zAJVCXrbB3Rsjni9Ex19/view' target='_blank'>
+                {t('curriculum')} <FontAwesomeIcon className='ms-1' icon={faLink} />
               </a>
             </li>
 

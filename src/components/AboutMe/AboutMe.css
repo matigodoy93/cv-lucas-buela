@@ -16,3 +16,13 @@
     animation-timeline: view();
     animation-range: entry 0;
 }
+
+.photo-face {
+    background-color: #174a9c0c;
+    box-shadow: 0px 0px 30px 10px rgba(23, 74, 156, 0.6), 
+                0px 0px 60px 30px rgba(23, 74, 156, 0.3) inset;
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(23, 74, 156, 0.6), 
+                       0px 0px 60px 30px rgba(23, 74, 156, 0.3) inset;
+    -moz-box-shadow: 0px 0px 30px 10px rgba(23, 74, 156, 0.6), 
+                    0px 0px 60px 30px rgba(23, 74, 156, 0.3) inset;
+}
