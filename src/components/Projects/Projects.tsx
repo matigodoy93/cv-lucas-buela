@@ -19,7 +19,7 @@ export const Projects = () => {
   return (
     <section id="home-projects" ref={projectsHomeRef} className="h-full px-8 py-10">
 
-      <h2 className="font-bold text-center text-6xl mb-8 uppercase pt-20 md:text-7xl lg:pt-0 lg:text-7xl">{ t('projects') }</h2>
+      <h2 className="font-bold text-center text-6xl mb-8 uppercase pt-20 md:text-7xl lg:pt-20 lg:text-7xl">{ t('projects') }</h2>
 
       {/* Proyectos */}
       <div className="lg:flex lg:flex-wrap lg:justify-center">
@@ -27,7 +27,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-bold text-center leading-6 mb-6 md:text-4xl">{ t('cinemaOnline') }</h4>
             {/* Títulos */}
-            <Link to="/proyect/1">
+            <Link to="/project/online-cinema">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src={project1} alt="Certificado de aprobación en Educación IT" />
@@ -39,7 +39,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Valiant</h4>
             {/* Títulos */}
-            <Link to="/proyect/2">
+            <Link to="/project/valiant">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src={project2} alt="Certificado de aprobación en Educación IT" />
@@ -51,7 +51,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Cine Online</h4>
             {/* Títulos */}
-            <Link to="/proyect/3">
+            <Link to="/project/3">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
@@ -63,7 +63,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Cine Online</h4>
             {/* Títulos */}
-            <Link to="/proyect/4">
+            <Link to="/project/4">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
@@ -75,7 +75,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Cine Online</h4>
             {/* Títulos */}
-            <Link to="/proyect/5">
+            <Link to="/project/5">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
@@ -87,7 +87,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Cine Online</h4>
             {/* Títulos */}
-            <Link to="/proyect/6">
+            <Link to="/project/6">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
@@ -99,7 +99,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Cine Online</h4>
             {/* Títulos */}
-            <Link to="/proyect/7">
+            <Link to="/project/7">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
@@ -111,7 +111,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Cine Online</h4>
             {/* Títulos */}
-            <Link to="/proyect/8">
+            <Link to="/project/8">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
@@ -123,7 +123,7 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 lg:mb-14">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl">Cine Online</h4>
             {/* Títulos */}
-            <Link to="/proyect/9">
+            <Link to="/project/9">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
