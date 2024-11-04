@@ -7,6 +7,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Valiant } from "./pages/Valiant";
 import { Home } from "./pages/Home";
 import { CineOnline } from "./pages/CineOnline";
+import CursorBackground from "./components/CursorBackground/CursorBackground";
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
   
   return (
     <>
+      <CursorBackground />
+
       {
         location.pathname == '/' && <Navbar />
       }
