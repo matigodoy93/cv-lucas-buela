@@ -25,11 +25,11 @@ export const Projects = () => {
       <div className="lg:flex lg:flex-wrap lg:justify-center">
         
         <div className="mb-4 lg:w-2/4 lg:mb-14">
-          <h4 className="text-3xl text-bold text-center leading-6 mb-6 md:text-4xl">{ t('cinemaOnline') }</h4>
+          <h4 className="text-3xl text-bold text-center leading-6 mb-6 md:text-4xl">{ t('cinemaOnline.title') }</h4>
             {/* Títulos */}
             <Link to="/project/online-cinema">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src={project1} alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -41,7 +41,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/valiant">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src={project2} alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -53,7 +53,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/3">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -65,7 +65,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/4">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/5">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -89,7 +89,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/6">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -101,7 +101,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/7">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -113,7 +113,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/8">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>
@@ -125,7 +125,7 @@ export const Projects = () => {
             {/* Títulos */}
             <Link to="/project/9">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
-                <div className=" project-glow project bg-red-500 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
+                <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
                   <img className='h-72 w-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/1200px-Aspect-ratio-16x9.svg.png" alt="Certificado de aprobación en Educación IT" />
                 </div>
               </div>

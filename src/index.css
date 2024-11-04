@@ -11,7 +11,6 @@ html {
   color: #fff;
   font-family: 'CY grotesk key', sans-serif;
   font-weight: light;
-	height: 100%;
 
   /* Animación de fondo */
   background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #53354a);
@@ -19,15 +18,6 @@ html {
   animation: gradient 2.5s ease infinite;
   /* Animación de fondo */
 }
-
-body {
-  /* Animación de fondo */
-  background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #53354a);
-	background-size: 400% 400%;
-	animation: gradient 2.5s ease infinite;
-  /* Animación de fondo */
-}
-
 /* @layer components {
   .menu-item {
     @apply ;

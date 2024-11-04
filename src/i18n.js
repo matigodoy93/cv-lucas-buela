@@ -17,7 +17,30 @@ i18n.use(initReactI18next).init({
                     educationDavinciTitle: 'Escuela de Arte Multimedial "Da Vinci"',
                     educationDavinciDescription: 'Analista de sistemas/Diseñador UX/UI | 2021 - En curso',
                     educacionItDescription: 'Tester QA Manual/Automation Selenium | 2023 (Finalizado)',
-                    cinemaOnline: 'Cine Online',
+                    cinemaOnline: {
+                        title:'Cine Online',
+                        homePageText: 'Aquí nos encontramos con el diseño de la Home Page, donde vemos el logo y un carrousel de tres banners diseñados previamente en Photoshop. Luego dos listas desplazables, en la primera para seleccionar un complejo del cine y la segunda para el tipo de sala. A continuación podemos ver tres secciones, en la primera las películas medianamente nuevas. En la segunda sección se encuentran las estreno y en la tercera las que están próximamente a estrenarse. Para finalizar tenemos un footer donde vemos algunas direcciones de los complejos y seguido las RRSS.',
+                        contactFormTitle: 'Formulario de Contacto',
+                        contactFormText: 'En el apartado de “Formulario de contacto” nos encontramos con un formulario donde con solo tres datos (Nombre,Apellido y Mail), el usuario se puede comunicar con nosotros. Esta sección cuenta también con Google Maps donde podemos encontrar el punto exacto de cada complejo de CineOnline.',
+                        loginFormTitle: 'Formulario de Log In',
+                        loginFormText: 'La sección de LOG IN (INICIO DE SESION), cuenta con un formulario para ingresar datos del usuario, donde posteriormente se es analizado en una base de datos para verificar si coincide con un perfil previamente inscripto, de no ser asi , cuenta con la opción de crear un usuario nuevo o de recuperar su contraseña en caso de olvidarla.',
+                        classicsSectionTitle: 'Seccion de Clásicos',
+                        classicsSectionText: 'El apartado de CLASICOS , es donde podremos encontrar y revivir esas películas que nos fascinaron a lo largo del tiempo. Podemos filtrarlas mediante los diferentes géneros cinematográficos. - Acción - Aventura - Catástrofe - Ciencia Ficción - Comedia - Documentales - Drama - Fantasía',
+                        alt: {
+                            desktopDevice: 'Dispositivo de escritorio',
+                            tabletpDevice: 'Dispositivo de tableta',
+                        }
+                    },
+                    valiant: {
+                        title: 'Valiant',
+                        valiant1: 'VALIANT 1.0',
+                        valiant1Text: 'VALIANT es un proyecto de diseño de Interfaz Web , nuestro trabajo consiste en encontrar las fallas de una antigua version y diseñar una nueva utilizando FIGMA. La historia es la siguiente: La "Valiant", una vez el orgullo de la flota estelar, ahora es un monumento a la tragedia en el espacio. Su destrucción fue un golpe devastador, pero entre los restos se descubrió una dolorosa verdad: la interfaz de control de la torre de defensa, compleja e ineficiente, contribuyó a su caída. El operador, abrumado por la información y la falta de herramientas intuitivas, no pudo reaccionar a tiempo. La "Hope" se perdió, y con ella, la "Valiant".',
+                        designDecisions: 'Decisiones de Diseño',
+                        designSystem: 'Sistema de Diseño',
+                        valiant2: 'Valiant 2.0',
+                        valiant2Confirmation: 'Valiant 2.0 (Confirmación)',
+                        valiant2Result: 'Valiant 2.0 (Resultado)',
+                    },
                     thanks: '¡Gracias por pasar por aquí! Aquí hay más de mí si estás interesado',
                 }
             },
@@ -32,7 +55,31 @@ i18n.use(initReactI18next).init({
                     educationDavinciTitle: '"Da Vinci" Multimedia Art School',
                     educationDavinciDescription: 'Systems Analyst/UX/UI Designer | 2021 - In progress',
                     educacionItDescription: 'QA Tester Manual/Automation Selenium | 2023 (Completed)',
-                    cinemaOnline: 'Online Cinema',
+                    cinemaOnline: {
+                        title: 'Online Cinema',
+                        homePageText: 'Here we have the design of the Home Page, where we see the logo and a carousel of three banners previously designed in Photoshop. Then, there are two drop-down lists: the first to select a cinema complex and the second for the type of theater. Next, we can see three sections: the first shows moderately new movies, the second features new releases, and the third displays upcoming releases. Finally, we have a footer that shows some addresses of the complexes, followed by social media links.',
+                        contactFormTitle: 'Contact Form',
+                        contactFormText: 'In the “Contact Form” section, there is a form where, with just three fields (First Name, Last Name, and Email), users can reach out to us. This section also includes Google Maps, where users can find the exact location of each CineOnline complex.',
+                        loginFormTitle: 'Log In Form',
+                        loginFormText: 'The LOG IN section includes a form for users to enter their details, which are then checked against a database to verify if they match a previously registered profile. If not, users have the option to create a new account or recover their password if they have forgotten it.',
+                        classicsSectionTitle: 'Classics Section',
+                        classicsSectionText: 'The CLASSICS section is where we can find and relive those movies that have fascinated us over time. They can be filtered by various film genres: Action, Adventure, Disaster, Science Fiction, Comedy, Documentaries, Drama, Fantasy.',
+                        alt: {
+                            desktopDevice: 'Desktop Device',
+                            tabletpDevice: 'Tablet Device',
+                        }
+                    },
+                    valiant: {
+                        title: 'Valiant',
+                        valiant1: 'VALIANT 1.0',
+                        valiant1Text: 'VALIANT is a Web Interface Design project, where our task is to identify flaws in an older version and design a new one using FIGMA. The story goes as follows: The "Valiant," once the pride of the star fleet, now stands as a monument to tragedy in space. Its destruction was a devastating blow, but amidst the wreckage, a painful truth emerged: the defense tower control interface, complex and inefficient, contributed to its downfall. The operator, overwhelmed by information and lacking intuitive tools, couldn’t react in time. "Hope" was lost, and with it, the "Valiant."',
+                        designDecisions: 'Design Decisions',
+                        designSystem: 'Design System',
+                        valiant2: 'Valiant 2.0',
+                        valiant2Confirmation: 'Valiant 2.0 (Confirmation)',
+                        valiant2Result: 'Valiant 2.0 (Result)',
+
+                    },
                     thanks: 'Thanks for stopping by! Here is more from me if you are interested',
                 }
             },

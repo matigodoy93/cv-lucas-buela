@@ -32,10 +32,10 @@ export const Education = () => {
         {/* Certificados */}
         <div className="w-full lg:w-2/4 lg:flex">
           <div className="w-full flex flex-col items-end lg:relative lg:top-24">
-            <div className="certified-glow  certified-animation bg-blue-500 w-full md:w-3/4 md:mx-auto lg:w-3/4 h-full rounded-xl mb-10 lg:mb-0 lg:relative">
+            <div className="certified-glow  certified-animation bg-blue-900 w-full md:w-3/4 md:mx-auto lg:w-3/4 h-full rounded-xl mb-10 lg:mb-0 lg:relative">
               <img className="w-full" src={ certified1 } alt="Certificado de aprobación en Educación IT" />
             </div>
-            <div className="certified-glow  certified-animation bg-blue-800 w-full md:w-3/4 md:mx-auto lg:w-3/4 h-full rounded-xl lg:absolute lg:-top-1/3 lg:right-44 2xl:right-80 lg:transform">
+            <div className="certified-glow  certified-animation bg-blue-900 w-full md:w-3/4 md:mx-auto lg:w-3/4 h-full rounded-xl lg:absolute lg:-top-1/3 lg:right-44 2xl:right-80 lg:transform">
               <img className="w-full" src={ certified2 } alt="Certificado de asistencia en Educación IT" />
             </div>
           </div>

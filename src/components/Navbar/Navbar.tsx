@@ -15,7 +15,7 @@ export function Navbar() {
 
   useEffect(() => {
     i18n.changeLanguage(navigator.language);
-  }, [])
+  }, [i18n])
   
   useEffect(() => {
     const handleResize = () => {

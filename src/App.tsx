@@ -4,8 +4,9 @@ import {
   useLocation
 } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
-import { Project } from "./pages/Project";
+import { Valiant } from "./pages/Valiant";
 import { Home } from "./pages/Home";
+import { CineOnline } from "./pages/CineOnline";
 
 function App() {
 
@@ -19,15 +20,15 @@ function App() {
 
       <Routes>
         <Route index element={<Home />} />
-        <Route path='project/online-cinema' element={<Project />} />
-        <Route path='project/valiant' element={<Project />} />
-        <Route path='project/3' element={<Project />} />
-        <Route path='project/4' element={<Project />} />
-        <Route path='project/5' element={<Project />} />
-        <Route path='project/6' element={<Project />} />
-        <Route path='project/7' element={<Project />} />
-        <Route path='project/8' element={<Project />} />
-        <Route path='project/9' element={<Project />} />
+        <Route path='project/online-cinema' element={<CineOnline />} />
+        <Route path='project/valiant' element={<Valiant />} />
+        {/* <Route path='project/3' element={<Project />} /> */}
+        {/* <Route path='project/4' element={<Project />} /> */}
+        {/* <Route path='project/5' element={<Project />} /> */}
+        {/* <Route path='project/6' element={<Project />} /> */}
+        {/* <Route path='project/7' element={<Project />} /> */}
+        {/* <Route path='project/8' element={<Project />} /> */}
+        {/* <Route path='project/9' element={<Project />} /> */}
       </Routes>
     </>
   )

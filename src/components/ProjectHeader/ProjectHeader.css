@@ -1,0 +1,20 @@
+.menu {
+    background: rgba(0,0,0,.8);
+}
+
+/* ----------------------- LINEA ----------------------- */
+
+.scroll-watcher {
+  z-index: 1000;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+  transform-origin: left;
+  border: 1px solid #fff;
+}
+
+@keyframes scroll-watcher {
+  from { scale: 1 1;  }
+  to { scale: 0 1; }
+}
+
+/* ----------------------- LINEA ----------------------- */

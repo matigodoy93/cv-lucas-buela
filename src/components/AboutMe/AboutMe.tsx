@@ -13,7 +13,7 @@ export const AboutMe = () => {
       
       <div className="ms-0 lg:ms-32 pt-20 lg:pt-0 lg:flex lg:flex-row lg:justify-evenly lg:items-center">
         {/* Foto */}
-        <div className="photo-face lg:mt-0 mx-auto lg:mx-0 w-80 h-80 lg:w-96 lg:h-96 overflow-hidden bg-red-700 rounded-full">
+        <div className="photo-face lg:mt-0 mx-auto lg:mx-0 w-80 h-80 lg:w-96 lg:h-96 overflow-hidden bg-blue-900 rounded-full">
           <img className=" w-full transform -translate-y-44" src={profile} alt="Lucas Gustavo Buela" />
         </div>
 
