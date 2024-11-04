@@ -1,11 +1,11 @@
-import { ProjectHeader } from '../components/ProjectHeader/ProjectHeader'
+import { useTranslation } from 'react-i18next';
 import image1 from "../assets/images/project-valiant/1.png";
 import image2 from "../assets/images/project-valiant/2.png";
 import image3 from "../assets/images/project-valiant/3.png";
 import image4 from "../assets/images/project-valiant/4.jpg";
 import image5 from "../assets/images/project-valiant/5.jpg";
 import image6 from "../assets/images/project-valiant/6.jpg";
-import { useTranslation } from 'react-i18next';
+import { ProjectHeader } from '../components/ProjectHeader/ProjectHeader';
 import { ProjectInfo } from '../components/ProjectInfo/ProjectInfo';
 
 export const Valiant = () => {

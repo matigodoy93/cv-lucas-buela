@@ -123,12 +123,12 @@ export const CineOnline = () => {
                     <div className="lg:flex lg:justify-between">
                         <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
                             <div className="w-full lg:w-full mx-auto">
-                                <img className="w-full" src={image11} alt={ t('cinemaOnline.alt.desktopDevice') } />
+                                <img className="appear-animation w-full" src={image11} alt={ t('cinemaOnline.alt.desktopDevice') } />
                             </div>
                         </article>
                         <article className="w-full mt-10 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:items-center">
                             <div className="w-full lg:w-full mx-auto">
-                                <img className="w-full" src={image12} alt={ t('cinemaOnline.alt.tabletDevice') } />
+                                <img className="appear-animation w-full" src={image12} alt={ t('cinemaOnline.alt.tabletDevice') } />
                             </div>
                         </article>
                     </div>
