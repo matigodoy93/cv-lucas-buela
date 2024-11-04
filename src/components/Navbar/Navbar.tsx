@@ -9,13 +9,20 @@ export function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const { t, i18n } = useTranslation();
 
+  const [isEnglish, setIsEnglish] = useState(false);
+
+  // Cambia el idioma y lo guarda en localStorage
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    localStorage.setItem('appLanguage', lng);
+    setIsEnglish(lng === 'en');
   };
 
   useEffect(() => {
-    i18n.changeLanguage(navigator.language);
-  }, [i18n])
+    const savedLanguage = localStorage.getItem('appLanguage') || 'es'; // Predeterminado a 'es'
+    i18n.changeLanguage(savedLanguage);
+    setIsEnglish(savedLanguage === 'en'); // Establece el estado del switch
+  }, [i18n]);
   
   useEffect(() => {
     const handleResize = () => {
@@ -75,20 +82,21 @@ export function Navbar() {
 
             {/* SWITCH DE IDIOMA */}
             <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <label className="switch">
-                <input 
-                  type="checkbox" 
-                  onChange={() => i18n.language === 'es' ? changeLanguage('en') : changeLanguage('es')}
-                />
-                <span className="slider">
-                  <span className="flag es">
-                    <img src="https://flagcdn.com/w20/ar.png" alt="Argentina" />
-                  </span>
-                  <span className="flag en">
-                    <img src="https://flagcdn.com/w20/us.png" alt="Estados Unidos" />
-                  </span>
+            <label className="switch">
+              <input
+                type="checkbox"
+                onChange={() => changeLanguage(isEnglish ? 'es' : 'en')}
+                checked={i18n.language === 'en'} // El estado del checkbox depende del idioma actual
+              />
+              <span className="slider">
+                <span className="flag es">
+                  <img src="https://flagcdn.com/w20/ar.png" alt="Argentina" />
                 </span>
-              </label>
+                <span className="flag en">
+                  <img src="https://flagcdn.com/w20/us.png" alt="Estados Unidos" />
+                </span>
+              </span>
+            </label>
             </li>
           </ul>
         </nav>
@@ -167,20 +175,21 @@ export function Navbar() {
             
             {/* SWITCH DE IDIOMA */}
             <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
-              <label className="switch">
-                <input 
-                  type="checkbox" 
-                  onChange={() => i18n.language === 'es' ? changeLanguage('en') : changeLanguage('es')}
-                />
-                <span className="slider">
-                  <span className="flag es">
-                    <img src="https://flagcdn.com/w20/ar.png" alt="Argentina" />
-                  </span>
-                  <span className="flag en">
-                    <img src="https://flagcdn.com/w20/us.png" alt="Estados Unidos" />
-                  </span>
+            <label className="switch">
+              <input
+                type="checkbox"
+                onChange={() => changeLanguage(isEnglish ? 'es' : 'en')}
+                checked={isEnglish} // Aquí se establece el estado del checkbox
+              />
+              <span className="slider">
+                <span className="flag es">
+                  <img src="https://flagcdn.com/w20/ar.png" alt="Argentina" />
                 </span>
-              </label>
+                <span className="flag en">
+                  <img src="https://flagcdn.com/w20/us.png" alt="Estados Unidos" />
+                </span>
+              </span>
+            </label>
             </li>
           </ul>
         </nav>
