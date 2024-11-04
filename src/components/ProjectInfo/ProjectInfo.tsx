@@ -1,4 +1,4 @@
-
+import './ProjectInfo.css'
 interface Props{
     isImageFirst: boolean;
     subtitle?: string;
@@ -27,7 +27,7 @@ export const ProjectInfo = ({
             isImageFirst && 
             <div className="mb-10">
                 <article className="w-full lg:flex lg:justify-between lg:items-center">
-                    <div className="w-full mx-auto mb-5 lg:w-2/5">
+                    <div className="appear-animation w-full mx-auto mb-5 lg:w-2/5">
                         <img className="w-full" src={image} alt={subtitle} />
                     </div>
             
@@ -48,7 +48,7 @@ export const ProjectInfo = ({
                         <p className="text-xl text-justify md:text-3xl lg:text-start"> { textLines } </p>
                     </div>
 
-                    <div className="w-full mx-auto lg:w-2/5">
+                    <div className="appear-animation w-full mx-auto lg:w-2/5">
                         <img className="w-full" src={image} alt={subtitle} />
                     </div>
                 </article>

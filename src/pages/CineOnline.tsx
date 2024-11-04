@@ -63,7 +63,7 @@ export const CineOnline = () => {
                                 <h4 className="text-4xl text-center py-5 uppercase lg:text-center">Banner 1</h4>
                             </div>
 
-                            <div className="w-full lg:w-4/5 mx-auto">
+                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
                                 <img className="w-full" src={image5} alt={'Banner 1'} />
                             </div>
                         </article>
@@ -72,7 +72,7 @@ export const CineOnline = () => {
                                 <h4 className="text-4xl text-center py-5 uppercase lg:text-center">Banner 2</h4>
                             </div>
 
-                            <div className="w-full lg:w-4/5 mx-auto">
+                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
                                 <img className="w-full" src={image6} alt={'Banner 2'} />
                             </div>
                         </article>
@@ -87,12 +87,12 @@ export const CineOnline = () => {
                     </div>
                     <div className="lg:flex lg:justify-between">
                         <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                            <div className="w-full lg:w-4/5 mx-auto">
+                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
                                 <img className="w-full" src={image7} alt={'Wireframe 1'} />
                             </div>
                         </article>
                         <article className="w-full mt-10 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:items-center">
-                            <div className="w-full lg:w-4/5 mx-auto">
+                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
                                 <img className="w-full" src={image8} alt={'Wireframe 2'} />
                             </div>
                         </article>
@@ -102,12 +102,12 @@ export const CineOnline = () => {
                 <div className="mb-10">
                     <div className="lg:flex lg:justify-between">
                         <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                            <div className="w-full lg:w-4/5 mx-auto">
+                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
                                 <img className="w-full" src={image9} alt={'Wireframe 3'} />
                             </div>
                         </article>
                         <article className="w-full mt-10 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:items-center">
-                            <div className="w-full lg:w-4/5 mx-auto">
+                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
                                 <img className="w-full" src={image10} alt={'Wireframe 4'} />
                             </div>
                         </article>
@@ -132,7 +132,6 @@ export const CineOnline = () => {
                             </div>
                         </article>
                     </div>
-                    <hr className="mt-10" />
                 </div>
 
             </div>

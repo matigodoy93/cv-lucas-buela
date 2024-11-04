@@ -34,7 +34,7 @@ export const Valiant = () => {
                         <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.designDecisions') }</h4>
                     </div>
 
-                    <div className="w-full ">
+                    <div className="w-full appear-animation">
                         <img className="w-full" src={image2} alt={ t('valiant.designDecisions') } />
                     </div>
                 </article>
@@ -50,7 +50,7 @@ export const Valiant = () => {
                         <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.designSystem') }</h4>
                     </div>
 
-                    <div className="w-full ">
+                    <div className="w-full appear-animation">
                         <img className="w-full" src={image3} alt={ t('valiant.designSystem') } />
                     </div>
                 </article>
@@ -66,7 +66,7 @@ export const Valiant = () => {
                         <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.valiant2') }</h4>
                     </div>
 
-                    <div className="w-full ">
+                    <div className="w-full appear-animation">
                         <img className="w-full" src={image4} alt={ t('valiant.valiant2') } />
                     </div>
                 </article>
@@ -82,7 +82,7 @@ export const Valiant = () => {
                         <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.valiant2Confirmation') }</h4>
                     </div>
 
-                    <div className="w-full ">
+                    <div className="w-full appear-animation">
                         <img className="w-full" src={image5} alt={ t('valiant.valiant2Confirmation') } />
                     </div>
                 </article>
@@ -98,12 +98,11 @@ export const Valiant = () => {
                         <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.valiant2Result') }</h4>
                     </div>
 
-                    <div className="w-full ">
+                    <div className="w-full appear-animation">
                         <img className="w-full" src={image6} alt={ t('valiant.valiant2Result') } />
                     </div>
                 </article>
             </div>
-            <hr className="mt-10" />
         </div>
 
       </div>
