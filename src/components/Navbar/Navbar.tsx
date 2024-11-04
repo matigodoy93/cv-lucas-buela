@@ -86,7 +86,7 @@ export function Navbar() {
               <input
                 type="checkbox"
                 onChange={() => changeLanguage(isEnglish ? 'es' : 'en')}
-                checked={i18n.language === 'en'} // El estado del checkbox depende del idioma actual
+                checked={isEnglish}
               />
               <span className="slider">
                 <span className="flag es">
