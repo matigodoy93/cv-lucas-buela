@@ -20,7 +20,7 @@ export const AboutMe = () => {
         {/* Texto */}
         <div className="background-about-description rounded-2xl w-full flex flex-col p-8 lg:w-2/4 lg:justify-center">
           <h2 className="font-bold text-center text-6xl mb-8 uppercase md:text-7xl lg:text-start lg:text-7xl">{ t('aboutMe') }</h2>
-          <p className="text-xl md:text-5xl md:text-justify text-center lg:text-start lg:text-2xl leading-7">{t('aboutMeDescrition')}</p>
+          <p className="text-xl md:text-5xl md:text-justify text-center md:leading-tight lg:text-start lg:text-2xl leading-7">{t('aboutMeDescrition')}</p>
         </div>
 
         <div className="redes">

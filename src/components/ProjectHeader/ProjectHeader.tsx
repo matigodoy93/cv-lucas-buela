@@ -50,24 +50,15 @@ export const ProjectHeader = ({ title }: Props) => {
         <hr className="w-1/2 scroll-watcher hidden md:inline-block md:1/4 md:w-1/5 lg:w-2/5" />
 
         {/* TÍTULO */}
-        <div className="w-full">
-          <h2 className='uppercase text-end'>{ title }</h2>
+        <div className="w-full absolute">
+          <h2 className='uppercase text-center'>{ title }</h2>
         </div>
 
         <ul
-          className={` w-2/5 md:w-3/4 lg:w-2/5 text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex `} 
+          className={`w-2/5 md:w-fit text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex `} 
         >
-          <li className="w-full md:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
-          <button
-            onClick={() => navigate('/')}
-            className="text-2xl px-4 py-1 bg-blue-500 rounded-full hover:bg-blue-600 transition duration-200"
-          >
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </button>
-          </li>
-
           {/* SWITCH DE IDIOMA */}
-          <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
+          <li className="w-fit text-center py-2 underline-offset-8 hover:underline md:px-2">
             <label className="switch">
               <input 
                 type="checkbox" 
@@ -83,6 +74,14 @@ export const ProjectHeader = ({ title }: Props) => {
                 </span>
               </span>
             </label>
+          </li>
+          <li className="w-fit md:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
+          <button
+            onClick={() => navigate('/')}
+            className="text-2xl px-4 py-1 bg-blue-500 rounded-full hover:bg-blue-600 transition duration-200"
+          >
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </button>
           </li>
         </ul>
       </nav>
@@ -112,7 +111,7 @@ export const ProjectHeader = ({ title }: Props) => {
           <hr className="w-1/3 hidden md:block" />
 
           <ul 
-            className={`
+            className={`mt-10 md:mt-0
               w-full md:w-2/5 lg:w-1/3 text-4xl md:text-base flex flex-col items-center 
               md:flex-row md:justify-around py-6 md:py-0 transition-all duration-300 ease-in-out 
               ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'} md:opacity-100 md:translate-y-0 md:flex
@@ -120,17 +119,8 @@ export const ProjectHeader = ({ title }: Props) => {
             style={{ position: isMenuOpen ? 'relative' : 'absolute', top: isMenuOpen ? '0' : '-100%' }}
             id="navbarLinks"
           >
-            <li className="w-full text-center py-12 md:px-2">
-            <button
-              onClick={() => navigate('/')}
-              className="text-2xl px-4 py-1 bg-blue-500 rounded-full hover:bg-blue-600 transition duration-200"
-            >
-              <FontAwesomeIcon icon={faArrowLeft} />
-            </button>
-            </li>
-            
             {/* SWITCH DE IDIOMA */}
-            <li className="w-full text-center py-2 underline-offset-8 hover:underline md:px-2">
+            <li className="w-full text-center py-12 underline-offset-8 hover:underline md:px-2">
               <label className="switch">
                 <input 
                   type="checkbox" 
@@ -146,6 +136,14 @@ export const ProjectHeader = ({ title }: Props) => {
                   </span>
                 </span>
               </label>
+            </li>
+            <li className="w-full text-center py-12 md:px-2">
+            <button
+              onClick={() => navigate('/')}
+              className="text-2xl px-4 py-1 bg-blue-500 rounded-full hover:bg-blue-600 transition duration-200"
+            >
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </button>
             </li>
           </ul>
         </nav>

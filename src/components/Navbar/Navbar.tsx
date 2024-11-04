@@ -39,10 +39,10 @@ export function Navbar() {
       <div className={`${isMobile && 'hidden'}`}>
       <nav className="bg-black md:bg-transparent w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
 
-          <hr className="w-1/2 scroll-watcher hidden md:inline-block md:1/4 md:w-1/5 lg:w-2/5" />
+          <hr className="w-1/2 scroll-watcher hidden md:inline-block md:1/4 md:w-1/4 lg:w-2/5" />
 
           <ul
-            className={` w-2/5 md:w-3/4 lg:w-2/5 text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex `} 
+            className={`w-2/5 text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex md:w-fit`} 
           >
             <li className="w-full md:text-2xl text-center py-2 underline-offset-8 hover:underline md:px-2">
               <button className="whitespace-nowrap underline-offset-8 hover:underline" onClick={() => {
@@ -126,7 +126,7 @@ export function Navbar() {
           <hr className="w-1/3 hidden md:block" />
 
           <ul 
-            className={`
+            className={`mt-10 md:mt-0
               w-full md:w-2/5 lg:w-1/3 text-4xl md:text-base flex flex-col items-center 
               md:flex-row md:justify-around py-6 md:py-0 transition-all duration-300 ease-in-out 
               ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'} md:opacity-100 md:translate-y-0 md:flex
