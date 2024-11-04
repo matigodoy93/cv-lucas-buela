@@ -11,6 +11,7 @@ html {
   color: #fff;
   font-family: 'CY grotesk key', sans-serif;
   font-weight: light;
+  white-space: pre-line;
 
   /* Animación de fondo */
   background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #53354a);
