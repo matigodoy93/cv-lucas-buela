@@ -4,6 +4,7 @@ import { Education } from '../components/Education/Education'
 import { Projects } from '../components/Projects/Projects'
 
 export const Home = () => {
+  
   return (
     <div>
         {/* Sobre mí */}

@@ -39,7 +39,7 @@ export function Navbar() {
       <div className={`${isMobile && 'hidden'}`}>
       <nav className="bg-black md:bg-transparent w-full flex items-center justify-between md:pe-6 md:py-4 fixed top-0 z-50">
 
-          <hr className="w-1/2 scroll-watcher hidden md:inline-block md:1/4 md:w-1/4 lg:w-2/5" />
+          <hr className="w-1/2 scroll-watcher hidden md:inline-block lg:w-3/5" />
 
           <ul
             className={`w-2/5 text-base flex-row justify-around items-center py-0 opacity-100 translate-y-0 flex md:w-fit`} 

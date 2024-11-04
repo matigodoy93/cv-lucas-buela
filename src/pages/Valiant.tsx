@@ -7,10 +7,24 @@ import image5 from "../assets/images/project-valiant/5.jpg";
 import image6 from "../assets/images/project-valiant/6.jpg";
 import { ProjectHeader } from '../components/ProjectHeader/ProjectHeader';
 import { ProjectInfo } from '../components/ProjectInfo/ProjectInfo';
+import { useEffect, useState } from 'react';
+import { Spinner } from '../components/Spinner/Spinner';
 
 export const Valiant = () => {
   
   const { t } = useTranslation();
+  
+  const [ fakeSpinner, setFakeSpinner]  = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setFakeSpinner(false);
+    }, 2000);
+  }, [])
+    
+  if(fakeSpinner) {
+      return <Spinner />
+  }
 
   return (
     <div className="mt-10 md:mt-24">

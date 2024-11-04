@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import image1 from "../assets/images/project-cineonline/1.jpg";
 import image10 from "../assets/images/project-cineonline/10.jpg";
@@ -13,10 +14,23 @@ import image8 from "../assets/images/project-cineonline/8.jpg";
 import image9 from "../assets/images/project-cineonline/9.jpg";
 import { ProjectHeader } from "../components/ProjectHeader/ProjectHeader";
 import { ProjectInfo } from "../components/ProjectInfo/ProjectInfo";
+import { Spinner } from "../components/Spinner/Spinner";
 
 export const CineOnline = () => {
 
     const { t } = useTranslation();
+
+    const [ fakeSpinner, setFakeSpinner]  = useState(true)
+
+    useEffect(() => {
+      setTimeout(() => {
+        setFakeSpinner(false);
+      }, 2000);
+    }, [])
+    
+    if(fakeSpinner) {
+        return <Spinner />
+    }
 
     return (
         <div className="mt-10 md:mt-24">
