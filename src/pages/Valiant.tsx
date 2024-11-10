@@ -9,6 +9,7 @@ import { ProjectHeader } from '../components/ProjectHeader/ProjectHeader';
 import { ProjectInfo } from '../components/ProjectInfo/ProjectInfo';
 import { useEffect, useState } from 'react';
 import { Spinner } from '../components/Spinner/Spinner';
+import './animations.css';
 
 export const Valiant = () => {
   

@@ -3,11 +3,13 @@ import {
   Routes,
   useLocation
 } from "react-router-dom";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Valiant } from "./pages/Valiant";
-import { Home } from "./pages/Home";
-import { CineOnline } from "./pages/CineOnline";
 import CursorBackground from "./components/CursorBackground/CursorBackground";
+import { Navbar } from "./components/Navbar/Navbar";
+import { CineOnline } from "./pages/CineOnline";
+import { FarmaConecta } from "./pages/FarmaConecta";
+import { Home } from "./pages/Home";
+import { Valiant } from "./pages/Valiant";
+import { DavinciFinal } from "./pages/davinci-final";
 
 function App() {
 
@@ -25,9 +27,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path='project/online-cinema' element={<CineOnline />} />
         <Route path='project/valiant' element={<Valiant />} />
-        {/* <Route path='project/3' element={<Project />} /> */}
-        {/* <Route path='project/4' element={<Project />} /> */}
-        {/* <Route path='project/5' element={<Project />} /> */}
+        <Route path='project/farmaconecta' element={<FarmaConecta />} />
+        <Route path='project/davinci' element={<DavinciFinal />} />
+        {/* <Route path='project/nft-landing' element={<NftLanding />} /> */}
         {/* <Route path='project/6' element={<Project />} /> */}
         {/* <Route path='project/7' element={<Project />} /> */}
         {/* <Route path='project/8' element={<Project />} /> */}
