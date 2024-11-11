@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import image1 from "../assets/images/project-valiant/1.png";
 import image2 from "../assets/images/project-valiant/2.png";
 import image3 from "../assets/images/project-valiant/3.png";
@@ -13,9 +12,7 @@ import './animations.css';
 import ImageGrid from '../components/ImageGrid/ImageGrid';
 
 export const Valiant = () => {
-  
-  const { t } = useTranslation();
-  
+
   const [ fakeSpinner, setFakeSpinner]  = useState(true)
 
   useEffect(() => {
@@ -38,8 +35,8 @@ export const Valiant = () => {
         <ProjectInfo
         isImageFirst={true}
         image={image1}
-        subtitle={ t('valiant.valiant1') }
-        text={ t('valiant.valiant1Text') }
+        subtitle={ 'valiant.valiant1' }
+        text={ 'valiant.valiant1Text' }
         />
 
         {/* ============= Decisiones de Diseño ============= */}

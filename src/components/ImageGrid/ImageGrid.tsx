@@ -23,7 +23,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({
   columnsDesktop = 2, // Valor por defecto para desktop
 }) => {
   
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="mb-10">

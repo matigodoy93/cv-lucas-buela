@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import './CursorBackground.css'
+import { useEffect, useState } from 'react';
 
 const CursorBackground = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +28,6 @@ const CursorBackground = () => {
 
   return (
     <div
-      id="cursor-bg"
       style={{
         display: isVisible ? 'block' : 'none',
         position: 'absolute',
