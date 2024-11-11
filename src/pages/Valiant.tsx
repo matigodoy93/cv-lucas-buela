@@ -10,6 +10,7 @@ import { ProjectInfo } from '../components/ProjectInfo/ProjectInfo';
 import { useEffect, useState } from 'react';
 import { Spinner } from '../components/Spinner/Spinner';
 import './animations.css';
+import ImageGrid from '../components/ImageGrid/ImageGrid';
 
 export const Valiant = () => {
   
@@ -42,83 +43,29 @@ export const Valiant = () => {
         />
 
         {/* ============= Decisiones de Diseño ============= */}
-        <div className="mb-10">
-            <div className="lg:flex lg:justify-between">
-                <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                    <div className="w-full mb-5 lg:w-2/4">
-                        <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.designDecisions') }</h4>
-                    </div>
+        
+        <ImageGrid title='valiant.designDecisions' images={[{src:image2, alt:'valiant.designDecisions'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
 
-                    <div className="w-full appear-animation">
-                        <img className="w-full" src={image2} alt={ t('valiant.designDecisions') } />
-                    </div>
-                </article>
-            </div>
-            <hr className="mt-10" />
-        </div>
+        <hr className="mt-10" />
+
 
         {/* ============= Design System ============= */}
-        <div className="mb-10">
-            <div className="lg:flex lg:justify-between">
-                <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                    <div className="w-full mb-5 lg:w-2/4">
-                        <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.designSystem') }</h4>
-                    </div>
+        <ImageGrid title='valiant.designSystem' images={[{src:image3, alt:'valiant.designSystem'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
 
-                    <div className="w-full appear-animation">
-                        <img className="w-full" src={image3} alt={ t('valiant.designSystem') } />
-                    </div>
-                </article>
-            </div>
-            <hr className="mt-10" />
-        </div>
+        <hr className="mt-10" />
 
         {/* ============= Valiant 2.0 ============= */}
-        <div className="mb-10">
-            <div className="lg:flex lg:justify-between">
-                <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                    <div className="w-full mb-5 lg:w-2/4">
-                        <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.valiant2') }</h4>
-                    </div>
-
-                    <div className="w-full appear-animation">
-                        <img className="w-full" src={image4} alt={ t('valiant.valiant2') } />
-                    </div>
-                </article>
-            </div>
-            <hr className="mt-10" />
-        </div>
+        <ImageGrid title='valiant.valiant2' images={[{src:image4, alt:'valiant.valiant2'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+        
+        <hr className="mt-10" />
 
         {/* ============= Valiant 2.0 (Confirmación) ============= */}
-        <div className="mb-10">
-            <div className="lg:flex lg:justify-between">
-                <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                    <div className="w-full mb-5 lg:w-2/4">
-                        <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.valiant2Confirmation') }</h4>
-                    </div>
+        <ImageGrid title='valiant.valiant2Confirmation' images={[{src:image5, alt:'valiant.valiant2Confirmation'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
 
-                    <div className="w-full appear-animation">
-                        <img className="w-full" src={image5} alt={ t('valiant.valiant2Confirmation') } />
-                    </div>
-                </article>
-            </div>
-            <hr className="mt-10" />
-        </div>
+        <hr className="mt-10" />
 
         {/* ============= Valiant 2.0 (Resultado) ============= */}
-        <div className="mb-10">
-            <div className="lg:flex lg:justify-between">
-                <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                    <div className="w-full mb-5 lg:w-2/4">
-                        <h4 className="text-4xl text-center py-5 uppercase lg:text-center">{ t('valiant.valiant2Result') }</h4>
-                    </div>
-
-                    <div className="w-full appear-animation">
-                        <img className="w-full" src={image6} alt={ t('valiant.valiant2Result') } />
-                    </div>
-                </article>
-            </div>
-        </div>
+        <ImageGrid title='valiant.valiant2Result' images={[{src:image6, alt:'valiant.valiant2Result'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
 
       </div>
 

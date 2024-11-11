@@ -16,6 +16,7 @@ import { ProjectHeader } from "../components/ProjectHeader/ProjectHeader";
 import { ProjectInfo } from "../components/ProjectInfo/ProjectInfo";
 import { Spinner } from "../components/Spinner/Spinner";
 import './animations.css';
+import ImageGrid from "../components/ImageGrid/ImageGrid";
 
 export const CineOnline = () => {
 
@@ -43,111 +44,48 @@ export const CineOnline = () => {
                 </h2>
 
                 <ProjectInfo
-                isImageFirst={true}
-                image={image1}
-                subtitle="Home Page"
-                text={ t('cinemaOnline.homePageText') }
+                    isImageFirst={true}
+                    image={image1}
+                    subtitle="Home Page"
+                    text={ t('cinemaOnline.homePageText') }
                 />
 
                 <ProjectInfo
-                isImageFirst={true}
-                image={image2}
-                subtitle={ t('cinemaOnline.contactFormTitle') }
-                text={ t('cinemaOnline.contactFormText') }
+                    isImageFirst={true}
+                    image={image2}
+                    subtitle={ t('cinemaOnline.contactFormTitle') }
+                    text={ t('cinemaOnline.contactFormText') }
                 />
 
                 <ProjectInfo
-                isImageFirst={false}
-                image={image3}
-                subtitle={ t('cinemaOnline.loginFormTitle') }
-                text={ t('cinemaOnline.loginFormText') }
+                    isImageFirst={false}
+                    image={image3}
+                    subtitle={ t('cinemaOnline.loginFormTitle') }
+                    text={ t('cinemaOnline.loginFormText') }
                 />
 
                 <ProjectInfo
-                isImageFirst={false}
-                image={image4}
-                subtitle={ t('cinemaOnline.classicsSectionTitle') }
-                text={ t('cinemaOnline.classicsSectionText') }
+                    isImageFirst={false}
+                    image={image4}
+                    subtitle={ t('cinemaOnline.classicsSectionTitle') }
+                    text={ t('cinemaOnline.classicsSectionText') }
                 />
 
                 {/* ============= BANNERS ============= */}
-                <div className="mb-10">
-                    <div className="lg:flex lg:justify-between">
-                        <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                            <div className="w-full mb-5 lg:w-2/4">
-                                <h4 className="text-4xl text-center py-5 uppercase lg:text-center">Banner 1</h4>
-                            </div>
+                <ImageGrid title="Banners" images={[{title: 'Banner 1', src:image5, alt:'Banner 1'}, {title: 'Banner 2', src:image6, alt:'Banner 2'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={2} />
 
-                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
-                                <img className="w-full" src={image5} alt={'Banner 1'} />
-                            </div>
-                        </article>
-                        <article className="w-full mt-10 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:items-center">
-                            <div className="w-full mb-5 lg:w-2/4">
-                                <h4 className="text-4xl text-center py-5 uppercase lg:text-center">Banner 2</h4>
-                            </div>
-
-                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
-                                <img className="w-full" src={image6} alt={'Banner 2'} />
-                            </div>
-                        </article>
-                    </div>
-                    <hr className="mt-10" />
-                </div>
+                <hr className="mt-10" />
 
                 {/* ============= WIREFRAMES ============= */}
-                <div className="mb-10">
-                    <div className="w-full mb-10">
-                        <h4 className="text-4xl text-center uppercase py-5 lg:text-center">WireFrames</h4>
-                    </div>
-                    <div className="lg:flex lg:justify-between">
-                        <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
-                                <img className="w-full" src={image7} alt={'Wireframe 1'} />
-                            </div>
-                        </article>
-                        <article className="w-full mt-10 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:items-center">
-                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
-                                <img className="w-full" src={image8} alt={'Wireframe 2'} />
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <ImageGrid title="Wireframes" images={[{title: 'Wireframe 1', src:image7, alt:'Wireframe 1'}, {title: 'Wireframe 2', src:image8, alt:'Wireframe 2'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={2} />
+                
 
-                <div className="mb-10">
-                    <div className="lg:flex lg:justify-between">
-                        <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
-                                <img className="w-full" src={image9} alt={'Wireframe 3'} />
-                            </div>
-                        </article>
-                        <article className="w-full mt-10 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:items-center">
-                            <div className="appear-animation w-full lg:w-4/5 mx-auto">
-                                <img className="w-full" src={image10} alt={'Wireframe 4'} />
-                            </div>
-                        </article>
-                    </div>
-                    <hr className="mt-10" />
-                </div>
+                <ImageGrid  images={[{src:image9, alt:'Wireframe 3'}, {src:image10, alt:'Wireframe 4'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={2} />
+
+                <hr className="mt-10" />
 
                 {/* ============= DISPOSITIVOS ============= */}
-                <div className="mb-10">
-                    <div className="w-full">
-                        <h4 className="text-4xl uppercase text-center py-5 lg:text-center">Mockups</h4>
-                    </div>
-                    <div className="lg:flex lg:justify-between">
-                        <article className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center ">
-                            <div className="w-full lg:w-full mx-auto">
-                                <img className="appear-animation w-full" src={image11} alt={ t('cinemaOnline.alt.desktopDevice') } />
-                            </div>
-                        </article>
-                        <article className="w-full mt-10 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:items-center">
-                            <div className="w-full lg:w-full mx-auto">
-                                <img className="appear-animation w-full" src={image12} alt={ t('cinemaOnline.alt.tabletDevice') } />
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <ImageGrid title="Mockups" images={[{src:image11, alt:'Wireframe 1'}, {src:image12, alt:'Wireframe 2'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={2} />
 
             </div>
         </div>

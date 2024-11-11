@@ -29,7 +29,7 @@ i18n.use(initReactI18next).init({
                         loginFormTitle: 'Formulario de Log In',
                         loginFormText: 'La sección de LOG IN (INICIO DE SESION), cuenta con un formulario para ingresar datos del usuario, donde posteriormente se es analizado en una base de datos para verificar si coincide con un perfil previamente inscripto, de no ser asi , cuenta con la opción de crear un usuario nuevo o de recuperar su contraseña en caso de olvidarla.',
                         classicsSectionTitle: 'Seccion de Clásicos',
-                        classicsSectionText: 'El apartado de CLASICOS , es donde podremos encontrar y revivir esas películas que nos fascinaron a lo largo del tiempo. \nPodemos filtrarlas mediante los diferentes géneros cinematográficos. - Acción - Aventura - Catástrofe - Ciencia Ficción - Comedia - Documentales - Drama - Fantasía',
+                        classicsSectionText: 'El apartado de CLASICOS , es donde podremos encontrar y revivir esas películas que nos fascinaron a lo largo del tiempo. \nPodemos filtrarlas mediante los diferentes géneros cinematográficos. \n\n- Acción \n- Aventura \n- Catástrofe \n- Ciencia Ficción \n- Comedia \n- Documentales \n- Drama \n- Fantasía',
                         alt: {
                             desktopDevice: 'Dispositivo de escritorio',
                             tabletpDevice: 'Dispositivo de tableta',
