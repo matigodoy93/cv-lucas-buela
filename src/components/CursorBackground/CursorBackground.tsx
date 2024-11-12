@@ -40,11 +40,11 @@ const CursorBackground = () => {
         left: `${position.left}px`,
         width: '250px',
         height: '250px',
-        background: isHovered ? '#2a7cdf69' : '#69DDFF', // Cambio de color
+        background: isHovered ? '#2a7cdf69' : '#2a7cdf49', // Cambio de color
         borderRadius: '50%',
         filter: 'blur(50px)',
         transition: 'top 0.05s linear, left 0.05s linear, background 0.3s ease, transform 0.3s ease',
-        transform: isHovered ? 'scale(1)' : 'scale(1.5)', // Expande el cursor cuando está sobre un elemento
+        transform: isHovered ? 'scale(1)' : 'scale(2.5)', // Expande el cursor cuando está sobre un elemento
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeaveElement}
