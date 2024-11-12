@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  cursor: none;
+}
+
 html {
   font-size: 14px;
   margin: 0;
@@ -12,6 +16,11 @@ html {
   font-family: 'CY grotesk key', sans-serif;
   font-weight: light;
   white-space: pre-line;
+
+  /* Esto hace que al colocar el cursor a la derecha de la pantalla no aparezca el scroll horizontal */
+  overflow-x: hidden;
+  width: 100%;
+  /* Esto hace que al colocar el cursor a la derecha de la pantalla no aparezca el scroll horizontal */
 
   /* Animación de fondo */
   background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #53354a);
