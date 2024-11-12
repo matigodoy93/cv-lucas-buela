@@ -49,7 +49,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({
             {image.title && (
               <h5 className="text-2xl text-center py-5 uppercase lg:text-center">{t(image.title)}</h5>
             )}
-            <div className="w-full">
+            <div className="w-3/4">
               <img
                 className="appear-animation w-full"
                 src={image.src}
