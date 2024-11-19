@@ -15,8 +15,6 @@ html {
   color: #fff;
   font-family: 'CY grotesk key';
   font-weight: light;
-  white-space: pre-line;
-
   /* Esto hace que al colocar el cursor a la derecha de la pantalla no aparezca el scroll horizontal */
   overflow-x: hidden;
   width: 100%;

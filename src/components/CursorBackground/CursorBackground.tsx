@@ -11,7 +11,11 @@ const CursorBackground = () => {
         top: e.pageY - 125,
         left: e.pageX - 125,
       });
-      setIsVisible(true);
+      // setIsVisible(true);
+
+      if(e.pageY > 3265 && location.pathname == '/') { 
+        setIsVisible(false) 
+      } else { setIsVisible(true) };
     };
 
     const handleMouseLeave = () => {
