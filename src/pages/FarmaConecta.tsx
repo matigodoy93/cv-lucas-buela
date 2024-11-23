@@ -15,6 +15,7 @@ import { ProjectHeader } from '../components/ProjectHeader/ProjectHeader';
 import { Spinner } from '../components/Spinner/Spinner';
 import './animations.css';
 import { ProjectInfo } from '../components/ProjectInfo/ProjectInfo';
+import CursorBackground from '../components/CursorBackground/CursorBackground';
 
 export const FarmaConecta = () => {
 
@@ -31,88 +32,91 @@ export const FarmaConecta = () => {
     }
   
     return (
-      <div className="mt-10 md:mt-24">
-        <ProjectHeader title="FARMACONECTA" />
-  
-        <div className="px-10 md:px-20 lg:px-40">
-          <h2 className='font-bold text-center mb-8 text-5xl uppercase md:text-7xl lg:text-start lg:text-7xl lg:hidden'>FARMACONECTA</h2>
+      <>
+        <CursorBackground />
+        <div className="mt-10 md:mt-24">
+          <ProjectHeader title="FARMACONECTA" />
+    
+          <div className="px-10 md:px-20 lg:px-40">
+            <h2 className='font-bold text-center mb-8 text-5xl uppercase md:text-7xl lg:text-start lg:text-7xl lg:hidden'>FARMACONECTA</h2>
 
-          {/* =============  ============= */}
-          <ImageGrid images={[{title: '', src:image0, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="my-10" />
+            {/* =============  ============= */}
+            <ImageGrid images={[{title: '', src:image0, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+            <hr className="my-10" />
 
-          {/* =============  ============= */}
-          <ImageGrid images={[{title: '', src:image1, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="my-10" />
+            {/* =============  ============= */}
+            <ImageGrid images={[{title: '', src:image1, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+            <hr className="my-10" />
 
-          {/* =============  ============= */}
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image2}
-              subtitle={ 'Día de la Madre' }
-              text="farmaConecta.motherDay"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image3}
-              subtitle={ 'Día de la Padre' }
-              text="farmaConecta.fatherDay"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image4}
-              subtitle={ 'Invierno' }
-              text="farmaConecta.winter"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image5}
-              subtitle={ 'Otoño' }
-              text="farmaConecta.autumn"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image6}
-              subtitle={ 'Primavera' }
-              text="farmaConecta.spring"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image7}
-              subtitle={ 'Verano' }
-              text="farmaConecta.summer"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image8}
-              subtitle={ '' }
-              text="farmaConecta.imanDesign"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image9}
-              subtitle={ '' }
-              text="farmaConecta.poster"
-          />
-          
-          <ProjectInfo
-              isImageFirst={true}
-              image={image10}
-              subtitle={ '' }
-              text="farmaConecta.brochure"
-          />
+            {/* =============  ============= */}
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image2}
+                subtitle={ 'Día de la Madre' }
+                text="farmaConecta.motherDay"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image3}
+                subtitle={ 'Día de la Padre' }
+                text="farmaConecta.fatherDay"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image4}
+                subtitle={ 'Invierno' }
+                text="farmaConecta.winter"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image5}
+                subtitle={ 'Otoño' }
+                text="farmaConecta.autumn"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image6}
+                subtitle={ 'Primavera' }
+                text="farmaConecta.spring"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image7}
+                subtitle={ 'Verano' }
+                text="farmaConecta.summer"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image8}
+                subtitle={ '' }
+                text="farmaConecta.imanDesign"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image9}
+                subtitle={ '' }
+                text="farmaConecta.poster"
+            />
+            
+            <ProjectInfo
+                isImageFirst={true}
+                image={image10}
+                subtitle={ '' }
+                text="farmaConecta.brochure"
+            />
 
-  
+    
+          </div>
+    
         </div>
-  
-      </div>
+      </>
     )
 }

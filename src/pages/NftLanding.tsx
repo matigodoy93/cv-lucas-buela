@@ -10,6 +10,7 @@ import { ProjectHeader } from "../components/ProjectHeader/ProjectHeader";
 import { Spinner } from "../components/Spinner/Spinner";
 import './animations.css';
 import ImageGrid from "../components/ImageGrid/ImageGrid";
+import CursorBackground from "../components/CursorBackground/CursorBackground";
 
 export const NftLanding = () => {
 
@@ -28,71 +29,75 @@ export const NftLanding = () => {
     }
 
     return (
-        <div className="mt-10 md:mt-24">
-            <ProjectHeader title={ t('cinemaOnline.title') } />
+        <>
+            <CursorBackground />
             
-            <div className="px-10 md:px-20 lg:px-40">
-                <h2 className="font-bold text-center mb-8 text-5xl uppercase md:text-7xl lg:text-start lg:text-7xl lg:hidden">
-                    { t('cinemaOnline.title') }
-                </h2>
+            <div className="mt-10 md:mt-24">
+                <ProjectHeader title={ t('cinemaOnline.title') } />
+                
+                <div className="px-10 md:px-20 lg:px-40">
+                    <h2 className="font-bold text-center mb-8 text-5xl uppercase md:text-7xl lg:text-start lg:text-7xl lg:hidden">
+                        { t('cinemaOnline.title') }
+                    </h2>
 
-                <ImageGrid
-                    images={[{ src:image0, alt:'Imagen 1' }]} 
-                    columnsMobile={1}
-                    columnsTablet={1}
-                    columnsDesktop={1}
-                />
+                    <ImageGrid
+                        images={[{ src:image0, alt:'Imagen 1' }]} 
+                        columnsMobile={1}
+                        columnsTablet={1}
+                        columnsDesktop={1}
+                    />
 
-                <hr className="my-10" />
+                    <hr className="my-10" />
 
-                <ImageGrid
-                    images={[{ src:image1, alt:'Imagen 2' }]} 
-                    columnsMobile={1}
-                    columnsTablet={1}
-                    columnsDesktop={1}
-                />
+                    <ImageGrid
+                        images={[{ src:image1, alt:'Imagen 2' }]} 
+                        columnsMobile={1}
+                        columnsTablet={1}
+                        columnsDesktop={1}
+                    />
 
-                <hr className="my-10" />
+                    <hr className="my-10" />
 
-                <ImageGrid
-                    images={[{ src:image2, alt:'Imagen 3' }]} 
-                    columnsMobile={1}
-                    columnsTablet={1}
-                    columnsDesktop={1}
-                />
+                    <ImageGrid
+                        images={[{ src:image2, alt:'Imagen 3' }]} 
+                        columnsMobile={1}
+                        columnsTablet={1}
+                        columnsDesktop={1}
+                    />
 
-                <hr className="my-10" />
+                    <hr className="my-10" />
 
-                <ImageGrid
-                    images={[{ src:image3, alt:'Imagen 4' }]} 
-                    columnsMobile={1}
-                    columnsTablet={1}
-                    columnsDesktop={1}
-                />
+                    <ImageGrid
+                        images={[{ src:image3, alt:'Imagen 4' }]} 
+                        columnsMobile={1}
+                        columnsTablet={1}
+                        columnsDesktop={1}
+                    />
 
-                <hr className="my-10" />
+                    <hr className="my-10" />
 
-                <ImageGrid
-                    images={[{ src:image4, alt:'Imagen 5' }]} 
-                    columnsMobile={1}
-                    columnsTablet={1}
-                    columnsDesktop={1}
-                />
+                    <ImageGrid
+                        images={[{ src:image4, alt:'Imagen 5' }]} 
+                        columnsMobile={1}
+                        columnsTablet={1}
+                        columnsDesktop={1}
+                    />
 
-                <hr className="my-10" />
+                    <hr className="my-10" />
 
-                <ImageGrid
-                    images={[{ src:image5, alt:'Imagen 6' }]} 
-                    columnsMobile={1}
-                    columnsTablet={1}
-                    columnsDesktop={1}
-                />
+                    <ImageGrid
+                        images={[{ src:image5, alt:'Imagen 6' }]} 
+                        columnsMobile={1}
+                        columnsTablet={1}
+                        columnsDesktop={1}
+                    />
 
-                <hr className="mt-10" />
+                    <hr className="mt-10" />
 
 
 
+                </div>
             </div>
-        </div>
+        </>
     );
 }

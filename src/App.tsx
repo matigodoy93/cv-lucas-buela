@@ -3,7 +3,6 @@ import {
   Routes,
   useLocation
 } from "react-router-dom";
-import CursorBackground from "./components/CursorBackground/CursorBackground";
 import { Navbar } from "./components/Navbar/Navbar";
 import { CineOnline } from "./pages/CineOnline";
 import { FarmaConecta } from "./pages/FarmaConecta";
@@ -18,7 +17,6 @@ function App() {
   
   return (
     <>
-      <CursorBackground />
 
       {
         location.pathname == '/' && <Navbar />

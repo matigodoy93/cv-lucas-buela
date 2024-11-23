@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import { Spinner } from '../components/Spinner/Spinner';
 import './animations.css';
 import ImageGrid from '../components/ImageGrid/ImageGrid';
+import CursorBackground from "../components/CursorBackground/CursorBackground";
 
 export const Valiant = () => {
 
@@ -26,46 +27,50 @@ export const Valiant = () => {
   }
 
   return (
-    <div className="mt-10 md:mt-24">
-      <ProjectHeader title="Valiant" />
+    <>
+      <CursorBackground />
+      
+      <div className="mt-10 md:mt-24">
+        <ProjectHeader title="Valiant" />
 
-      <div className="px-10 md:px-20 lg:px-40">
-        <h2 className='font-bold text-center mb-8 text-5xl uppercase md:text-7xl lg:text-start lg:text-7xl lg:hidden'>Valiant</h2>
+        <div className="px-10 md:px-20 lg:px-40">
+          <h2 className='font-bold text-center mb-8 text-5xl uppercase md:text-7xl lg:text-start lg:text-7xl lg:hidden'>Valiant</h2>
 
-        <ProjectInfo
-        isImageFirst={true}
-        image={image1}
-        subtitle={ 'valiant.valiant1' }
-        text={ 'valiant.valiant1Text' }
-        />
+          <ProjectInfo
+          isImageFirst={true}
+          image={image1}
+          subtitle={ 'valiant.valiant1' }
+          text={ 'valiant.valiant1Text' }
+          />
 
-        {/* ============= Decisiones de Diseño ============= */}
-        
-        <ImageGrid title='valiant.designDecisions' images={[{src:image2, alt:'valiant.designDecisions'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+          {/* ============= Decisiones de Diseño ============= */}
+          
+          <ImageGrid title='valiant.designDecisions' images={[{src:image2, alt:'valiant.designDecisions'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
 
-        <hr className="mt-10" />
+          <hr className="mt-10" />
 
 
-        {/* ============= Design System ============= */}
-        <ImageGrid title='valiant.designSystem' images={[{src:image3, alt:'valiant.designSystem'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+          {/* ============= Design System ============= */}
+          <ImageGrid title='valiant.designSystem' images={[{src:image3, alt:'valiant.designSystem'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
 
-        <hr className="mt-10" />
+          <hr className="mt-10" />
 
-        {/* ============= Valiant 2.0 ============= */}
-        <ImageGrid title='valiant.valiant2' images={[{src:image4, alt:'valiant.valiant2'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-        
-        <hr className="mt-10" />
+          {/* ============= Valiant 2.0 ============= */}
+          <ImageGrid title='valiant.valiant2' images={[{src:image4, alt:'valiant.valiant2'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+          
+          <hr className="mt-10" />
 
-        {/* ============= Valiant 2.0 (Confirmación) ============= */}
-        <ImageGrid title='valiant.valiant2Confirmation' images={[{src:image5, alt:'valiant.valiant2Confirmation'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+          {/* ============= Valiant 2.0 (Confirmación) ============= */}
+          <ImageGrid title='valiant.valiant2Confirmation' images={[{src:image5, alt:'valiant.valiant2Confirmation'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
 
-        <hr className="mt-10" />
+          <hr className="mt-10" />
 
-        {/* ============= Valiant 2.0 (Resultado) ============= */}
-        <ImageGrid title='valiant.valiant2Result' images={[{src:image6, alt:'valiant.valiant2Result'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+          {/* ============= Valiant 2.0 (Resultado) ============= */}
+          <ImageGrid title='valiant.valiant2Result' images={[{src:image6, alt:'valiant.valiant2Result'}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+
+        </div>
 
       </div>
-
-    </div>
+    </>
   )
 }
