@@ -10,6 +10,7 @@ import { FarmaConecta } from "./pages/FarmaConecta";
 import { Home } from "./pages/Home";
 import { Valiant } from "./pages/Valiant";
 import { DavinciFinal } from "./pages/davinci-final";
+import { NftLanding } from "./pages/NftLanding";
 
 function App() {
 
@@ -29,11 +30,7 @@ function App() {
         <Route path='project/valiant' element={<Valiant />} />
         <Route path='project/farmaconecta' element={<FarmaConecta />} />
         <Route path='project/davinci' element={<DavinciFinal />} />
-        {/* <Route path='project/nft-landing' element={<NftLanding />} /> */}
-        {/* <Route path='project/6' element={<Project />} /> */}
-        {/* <Route path='project/7' element={<Project />} /> */}
-        {/* <Route path='project/8' element={<Project />} /> */}
-        {/* <Route path='project/9' element={<Project />} /> */}
+        <Route path='project/nft-landing' element={<NftLanding />} />
       </Routes>
     </>
   )

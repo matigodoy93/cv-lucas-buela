@@ -45,6 +45,19 @@ i18n.use(initReactI18next).init({
                         valiant2Confirmation: 'Valiant 2.0 (Confirmación)',
                         valiant2Result: 'Valiant 2.0 (Resultado)',
                     },
+                    farmaConecta: {
+                        title: 'Farma Conecta',
+                        motherDay: "Catálogo creado para el Día de la Madre, donde pusimos varios descuentos a productos variados. Cada imagen de producto fue editada, sacando el fondo y agregando a cada uno el efecto sombra. Proporcioné también una anchura y altura determinada, lo mismo con las descripciones y precios.",
+                        fatherDay: "Catálogo diseñado para el Día del Padre. Aquí implementé un fondo para las descripciones y precios de los diferentes productos. Cada imagen de estos está mejor alineada.",
+                        spring: "Catálogo diseñado para el Día de la Primavera. En este me permití intercalar distancias entre productos. Cada uno tiene un fondo, al igual que su descripción. El fondo del catálogo también es una mejora.",
+                        autumn: "Catálogo diseñado con productos en oferta para otoño. En este trabajo me permití, al igual que en el anterior, jugar con las distancias. Solo se implementó el logo de Farmaconecta debajo del título y el fondo del catálogo es una imagen.",
+                        winter: "Catálogo diseñado con ofertas de invierno. En este trabajo me tomé la libertad de no solo jugar con las distancias, sino también de invertir la posición de los productos y que cada imagen sea más grande que el fondo. Se agregó también un fondo diferente en las descripciones y precios. Por último, el fondo del catálogo está diseñado con el efecto difuminado, y los copos de nieve también fueron hechos por mí.",
+                        summer: "Catálogo diseñado para verano. Cada descripción del producto tiene su fondo. El color de las marcas de los productos se cambió a blanco y el fondo del catálogo está diseñado a partir de la unión de dos imágenes con el efecto transparencia y degradado.",
+                        imanDesign: "Diseño de imán para clientes.",
+                        brochure: "Folleto diseñado para entregarle al cliente y con él poder retirar un producto/medicación que dejó previamente abonado.",
+                        poster: "Diseño de cartel de oferta. La idea de esto es que se pueda editar y colocar en el salón de la sucursal. Puede editarse a 2x1, 10%, 20%, 30% 'OFERTA ESPECIAL'."
+
+                    },
                     thanks: '¡Gracias por pasar por aquí! Aquí hay más de mí si estás interesado',
                 }
             },
@@ -82,7 +95,18 @@ i18n.use(initReactI18next).init({
                         valiant2: 'Valiant 2.0',
                         valiant2Confirmation: 'Valiant 2.0 (Confirmation)',
                         valiant2Result: 'Valiant 2.0 (Result)',
-
+                    },
+                    farmaConecta: {
+                        title: 'Farma Conecta',
+                        motherDay: "Catalog created for Mother's Day, featuring various discounts on a range of products. Each product image was edited, removing the background and adding a shadow effect. I also provided a specific width and height for each one, as well as descriptions and prices.",
+                        fatherDay: "Catalog designed for Father's Day, where I implemented a background for the descriptions and prices of the different products. Each image is better aligned.",
+                        spring: "Catalog designed for Spring Day. In this one, I allowed myself to intersperse distances between products. Each product has a background, as does its description. The background of the catalog is also improved.",
+                        autumn: "Catalog designed with products on sale for autumn. In this work, I also played with distances, just like the previous one. I only implemented the Farmaconecta logo below the title, and the catalog background is an image.",
+                        winter: "Catalog designed with winter offers. In this work, I took the liberty of not only playing with distances but also inverting the position of the products, making each image larger than the background. Additionally, a different background was added for the descriptions and prices. Lastly, the catalog background is designed with blurred effects, and the snowflakes were also created by me.",
+                        summer: "Catalog designed for summer. Each product description has its own background. The color of the product labels was changed to white, and the catalog background is designed by combining two images with transparency and gradient effects.",
+                        imanDesign: "Magnet design for customers.",
+                        brochure: "Brochure designed to be given to the customer, allowing them to pick up a product/medication that has been prepaid.",
+                        poster: "Offer poster design. The idea is that it can be edited and placed in the store, and it can be adjusted to 2x1, 10%, 20%, 30% 'SPECIAL OFFER'.",
                     },
                     thanks: 'Thanks for stopping by! Here is more from me if you are interested',
                 }

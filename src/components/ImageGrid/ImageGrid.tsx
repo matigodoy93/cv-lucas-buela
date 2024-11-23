@@ -13,6 +13,7 @@ interface ImageGridProps {
   columnsMobile?: number; // Número de columnas en mobile
   columnsTablet?: number; // Número de columnas en tablet
   columnsDesktop?: number; // Número de columnas en desktop
+  // customWidth?: string;
 }
 
 const ImageGrid: React.FC<ImageGridProps> = ({
@@ -21,6 +22,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({
   columnsMobile = 1, // Valor por defecto para mobile
   columnsTablet = 2, // Valor por defecto para tablet
   columnsDesktop = 2, // Valor por defecto para desktop
+  // customWidth
 }) => {
   
   const { t } = useTranslation();

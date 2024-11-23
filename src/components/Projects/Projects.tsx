@@ -6,7 +6,7 @@ import project1 from '../../assets/images/project-cineonline/5.jpg';
 import project2 from '../../assets/images/project-valiant/1.png';
 import project3 from '../../assets/images/project-farmaconecta/0.png';
 import project4 from '../../assets/images/project-ux-research-davinci/0.png';
-// import project5 from '../../assets/images/project-cineonline/5.jpg';
+import project5 from '../../assets/images/project-nft-landing/1.jpg';
 
 export const Projects = () => {
   const projectsHomeRef = useRef<HTMLDivElement | null>(null);
@@ -71,10 +71,10 @@ export const Projects = () => {
         <div className="mb-4 lg:w-2/4 md:mb-40">
           <h4 className="text-3xl text-center leading-6 mb-6 md:text-4xl uppercase">NFT - Landing Page</h4>
             {/* Títulos */}
-            <Link to="/project/5">
+            <Link to="/project/nft-landing">
               <div className="w-full h-60 md:h-72 flex flex-col items-center md:w-3/4 md:mx-auto lg:w-full lg:mb-12">
                 <div className=" project-glow project bg-blue-900 transition-all ease-in-out w-full duration-300 lg:w-3/4 rounded-xl mb-10 lg:mb-0 lg:relative hover:-translate-y-1 lg:opacity-75 lg:hover:opacity-100">
-                  <img className='h-auto lg:h-100 w-full' src={project4} alt="NFT - Landing Page" />
+                  <img className='h-auto lg:h-100 w-full' src={project5} alt="NFT - Landing Page" />
                 </div>
               </div>
             </Link>

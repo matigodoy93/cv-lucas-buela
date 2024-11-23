@@ -14,6 +14,7 @@ import ImageGrid from '../components/ImageGrid/ImageGrid';
 import { ProjectHeader } from '../components/ProjectHeader/ProjectHeader';
 import { Spinner } from '../components/Spinner/Spinner';
 import './animations.css';
+import { ProjectInfo } from '../components/ProjectInfo/ProjectInfo';
 
 export const FarmaConecta = () => {
 
@@ -35,57 +36,79 @@ export const FarmaConecta = () => {
   
         <div className="px-10 md:px-20 lg:px-40">
           <h2 className='font-bold text-center mb-8 text-5xl uppercase md:text-7xl lg:text-start lg:text-7xl lg:hidden'>FARMACONECTA</h2>
-  
-          {/* <ProjectInfo
-            isImageFirst={true}
-            image={image1}
-            subtitle={ t('farmaconecta.farmaconecta1') }
-            text={ t('farmaconecta.farmaconecta1Text') }
-          /> */}
 
           {/* =============  ============= */}
-          <ImageGrid images={[{src:image0, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <ImageGrid images={[{title: '', src:image0, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
-          <ImageGrid images={[{src:image1, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <ImageGrid images={[{title: '', src:image1, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
-          <ImageGrid images={[{src:image2, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image3, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image4, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image5, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image6, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image7, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image8, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image9, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
-
-          {/* =============  ============= */}
-          <ImageGrid images={[{src:image10, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image2}
+              subtitle={ 'Día de la Madre' }
+              text="farmaConecta.motherDay"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image3}
+              subtitle={ 'Día de la Padre' }
+              text="farmaConecta.fatherDay"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image4}
+              subtitle={ 'Invierno' }
+              text="farmaConecta.winter"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image5}
+              subtitle={ 'Otoño' }
+              text="farmaConecta.autumn"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image6}
+              subtitle={ 'Primavera' }
+              text="farmaConecta.spring"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image7}
+              subtitle={ 'Verano' }
+              text="farmaConecta.summer"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image8}
+              subtitle={ '' }
+              text="farmaConecta.imanDesign"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image9}
+              subtitle={ '' }
+              text="farmaConecta.poster"
+          />
+          
+          <ProjectInfo
+              isImageFirst={true}
+              image={image10}
+              subtitle={ '' }
+              text="farmaConecta.brochure"
+          />
 
   
         </div>
