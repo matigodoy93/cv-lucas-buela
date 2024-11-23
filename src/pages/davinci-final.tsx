@@ -68,136 +68,135 @@ export const DavinciFinal = () => {
           
           {/* =============  ============= */}
           <ImageGrid images={[{src:image0, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image1, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image2, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image3, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image4, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image5, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image6, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image7, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image8, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image9, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image10, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
   
           {/* =============  ============= */}
           <ImageGrid images={[{src:image11, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image12, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image13, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image14, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image15, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image16, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image17, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image18, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image19, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image20, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image21, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image22, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image23, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image24, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image25, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image26, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image27, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image28, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image29, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image30, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image31, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
+          <hr className="my-10" />
 
           {/* =============  ============= */}
           <ImageGrid images={[{src:image32, alt:''}]} columnsMobile={1} columnsTablet={1} columnsDesktop={1} />
-          <hr className="mt-10" />
 
   
   

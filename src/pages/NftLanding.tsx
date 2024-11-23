@@ -10,7 +10,6 @@ import { ProjectHeader } from "../components/ProjectHeader/ProjectHeader";
 import { Spinner } from "../components/Spinner/Spinner";
 import './animations.css';
 import ImageGrid from "../components/ImageGrid/ImageGrid";
-import { ProjectInfo } from "../components/ProjectInfo/ProjectInfo";
 
 export const NftLanding = () => {
 
@@ -44,7 +43,7 @@ export const NftLanding = () => {
                     columnsDesktop={1}
                 />
 
-                <hr className="mt-10" />
+                <hr className="my-10" />
 
                 <ImageGrid
                     images={[{ src:image1, alt:'Imagen 2' }]} 
@@ -53,7 +52,7 @@ export const NftLanding = () => {
                     columnsDesktop={1}
                 />
 
-                <hr className="mt-10" />
+                <hr className="my-10" />
 
                 <ImageGrid
                     images={[{ src:image2, alt:'Imagen 3' }]} 
@@ -62,7 +61,7 @@ export const NftLanding = () => {
                     columnsDesktop={1}
                 />
 
-                <hr className="mt-10" />
+                <hr className="my-10" />
 
                 <ImageGrid
                     images={[{ src:image3, alt:'Imagen 4' }]} 
@@ -71,7 +70,7 @@ export const NftLanding = () => {
                     columnsDesktop={1}
                 />
 
-                <hr className="mt-10" />
+                <hr className="my-10" />
 
                 <ImageGrid
                     images={[{ src:image4, alt:'Imagen 5' }]} 
@@ -80,7 +79,7 @@ export const NftLanding = () => {
                     columnsDesktop={1}
                 />
 
-                <hr className="mt-10" />
+                <hr className="my-10" />
 
                 <ImageGrid
                     images={[{ src:image5, alt:'Imagen 6' }]} 

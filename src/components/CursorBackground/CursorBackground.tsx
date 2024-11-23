@@ -13,7 +13,9 @@ const CursorBackground = () => {
       });
       // setIsVisible(true);
 
-      if(e.pageY > 3265 && location.pathname == '/') { 
+      console.log(e.pageY);
+      
+      if(e.pageY > 3590 && location.pathname == '/') { 
         setIsVisible(false) 
       } else { setIsVisible(true) };
     };
@@ -44,7 +46,7 @@ const CursorBackground = () => {
         left: `${position.left}px`,
         width: '250px',
         height: '250px',
-        background: isHovered ? '#2a7cdf69' : '#2a7cdf49', // Cambio de color
+        background: isHovered ? '#2a7cdf69' : '#E0E0E0', // Cambio de color
         borderRadius: '50%',
         filter: 'blur(50px)',
         transition: 'top 0.05s linear, left 0.05s linear, background 0.3s ease, transform 0.3s ease',
